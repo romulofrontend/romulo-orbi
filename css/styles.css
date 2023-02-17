@@ -1,7 +1,48 @@
+:root{  
+  --bg-color-01: #F5F5F5;
+  --bg-color-02: #19191A;
+  --bg-color-03: #FF0A6B;
+  --bg-color-04: #FFFFFF;
+  --bg-color-05: #E9E9E9;
+  --bg-color-06: #231F20;
+  --bg-color-07: #F6650C;
+  --bg-color-gradient-01: linear-gradient(270deg, #534A99 -0.01%, #FF0A6B 100%);;
+
+  --text-color-01: #231F20;
+  --text-color-02: #726F73;
+  --text-color-03: #5F5961;
+  --text-color-04: #FF0A6B;  
+  --text-color-05: #FAFAFA;
+  --text-color-06: #FFFFFF;
+  --text-color-07: #343A40;
+  --text-color-08: #767676;
+  --text-color-09: #000000;
+  --text-color-10: #D6B016;
+  --font-family-01: 'Inter', sans-serif;
+  --font-family-02: 'Barlow', sans-serif;
+  --font-size-08: 8px;
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-13: 13px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-24: 24px;
+  --font-size-26: 26px;  
+  --font-size-28: 28px;
+  --font-size-30: 30px; 
+  --font-size-31: 31px;
+  --font-size-44: 44px;
+  --font-size-50: 50px;
+}
+
+
 *{
-  font-family: ;
+  font-family: var(--font-family-01);
 }
 
 body{
-  background-color: #F5F5F5;
+  background: var(--bg-color-01 );
 }
