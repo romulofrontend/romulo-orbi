@@ -85,9 +85,10 @@ body{
 }
 
 .menucategories{
-  display: flex;
-  justify-content: space-around;
-  width: 500px
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 10%;
+
 }
 
 .menucategories__menuitem a{
