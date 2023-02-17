@@ -22,6 +22,7 @@
   --font-family-02: 'Barlow', sans-serif;
   --font-size-08: 8px;
   --font-size-10: 10px;
+  --font-size-11: 11px;
   --font-size-12: 12px;
   --font-size-13: 13px;
   --font-size-14: 14px;
@@ -45,4 +46,59 @@
 
 body{
   background: var(--bg-color-01 );
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+
+.header__division{
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo{
+  width: 126px;
+  height: 50px;
+}
+
+.headerButton{
+  height: 38px;
+  width: 106px;
+  box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
+  border-radius: 23px;
+}
+
+.headerButton a {
+  font-size: var(--font-size-11);
+  color: var(--text-color-01);
+  text-decoration: none;
+  line-height: 13px;
+  letter-spacing: -0.005em;
+}
+
+.headerLogo img{
+  width: 100%;
+  height: auto;;
+}
+
+.menucategories{
+  display: flex;
+  justify-content: space-around;
+  width: 500px
+}
+
+.menucategories__menuitem{
+}
+
+.menucategories__menuitem a{
+  font-size: var(--font-size-13);
+  color: var(--text-color-02);
+  text-decoration: none;
+}
+
+.menucategories__menuitem--selected{  
+  color: var(--text-color-02);
 }
