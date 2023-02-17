@@ -90,9 +90,6 @@ body{
   width: 500px
 }
 
-.menucategories__menuitem{
-}
-
 .menucategories__menuitem a{
   font-size: var(--font-size-13);
   color: var(--text-color-02);
