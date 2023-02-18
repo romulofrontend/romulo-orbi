@@ -1,3 +1,19 @@
+/*RESET CSS*/
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+/*reset css - end*/
+
+
 :root{  
   --bg-color-01: #F5F5F5;
   --bg-color-02: #19191A;
@@ -51,52 +67,58 @@ body{
 .header{
   display: flex;
   flex-direction: column;
-  margin: 24px;
+  margin: 23px 22.5px 18px 24px;
 }
 
-.header__division{
+.header__top{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.headerLogo{
+.header__logo__link {
+  background-image: url(../assets/svg/logo-ri.svg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999px;
   width: 126px;
   height: 50px;
 }
 
-.headerButton{
-  height: 38px;
-  width: 106px;
-  box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
-  border-radius: 23px;
-}
-
-.headerButton a {
-  font-size: var(--font-size-11);
+.header__link{
+  display: inline-block;  
+  background: var(--bg-color-04);
   color: var(--text-color-01);
-  text-decoration: none;
+  border: none;
+  border-radius: 23px;
+  box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
+  cursor:pointer;  
+  width: 106px;
+  height: 38px;
+  position: relative;  
+}
+
+.header__link__text{
+  position: absolute;
+  bottom: 12.25px;
+  right: 24px;
+  font-size: var(--font-size-11);
   line-height: 13px;
-  letter-spacing: -0.005em;
+  font-style: normal;
 }
 
-.headerLogo img{
-  width: 100%;
-  height: auto;;
+.header__link.link--newsletter{
+  display: none;
 }
 
-.menucategories{
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 10%;
-
-}
-
-.menucategories__menuitem a{
-  font-size: var(--font-size-13);
-  color: var(--text-color-02);
-  text-decoration: none;
-}
-
-.menucategories__menuitem--selected{  
-  color: var(--text-color-02);
+.header__menuaside{
+  background-image: url(../assets/svg/menu-aside-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;  
+  text-indent: -9999px;
+  width: 20px;
+  height: 15px;
 }
