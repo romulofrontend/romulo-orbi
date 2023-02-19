@@ -42,6 +42,7 @@ ol, ul, menu {
   --font-family-01: 'Inter', sans-serif;
   --font-family-02: 'Barlow', sans-serif;
   --font-size-08: 8px;
+  --font-size-09: 9px;
   --font-size-10: 10px;
   --font-size-11: 11px;
   --font-size-12: 12px;
@@ -182,3 +183,42 @@ body{
   height: 48px;
   cursor: pointer;
 }
+
+.navbar-celebrity{
+  margin-bottom: 25px;
+  max-width: 700px;
+}
+
+.navbar-celebrity__container{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding-left: 24px;
+}
+
+.navbar-celebrity__container__item {
+  margin-right: 10px;
+}
+
+.navbar-celebrity__container__item__link__image{
+  margin-bottom: 5px;
+  border: 2px solid var(--bg-color-01);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.navbar-celebrity__container__item__link__image.image--active{
+  border: 2px solid var(--bg-color-03);
+}
+
+.navbar-celebrity__container__item__link__image_title{
+font-size: var(--font-size-09);
+line-height: 11px;
+text-align: center;
+letter-spacing: -0.005em;
+color: var(--text-color-03);
+}
+
