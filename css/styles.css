@@ -166,3 +166,19 @@ body{
   left: 0;
   bottom: -14px;
 }
+
+.advertising{
+  margin-bottom: 10px;
+}
+
+.advertising_banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertising_banner_link_image{
+  display: block;
+  height: 48px;
+  cursor: pointer;
+}
