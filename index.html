@@ -1,486 +1,1006 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orbi - Teste Romulo</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbi - Teste Romulo</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header__top">
-      <h1 class="header__logo">
-        <a href="#" class="header__logo__link">Orbi</a>
-      </h1>
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <h1 class="header__logo">
+          <a href="#" class="header__logo__link">Orbi</a>
+        </h1>
 
-      <a href="#" class="header__link link--jornal">
-        <span class="header__link__text">Jornal</span>
-      </a>
-
-      <a href="#" class="header__link link--newsletter">
-        <span class="header__link__text">Newsletter</span>
-      </a>  
-
-      <a href="#" class="header__menuaside">Menu Aside</a>
-    </div>   
-
-    <div class="header__bottom">
-      <nav class="header-navbar">
-        <menu class="header-navbar__menu">            
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link  link--active">Home</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">Cultura</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">Entretenimento</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">Música</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">Cinema</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">Jornal </a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">Agenda</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">TV</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">Cultura</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">Entretenimento</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link">Música</a>
-          </li>
-          <li class="header-navbar__menu__item">
-            <a href="#" class="header-navbar__menu__item__link link--active">Cinema</a>
-          </li>      
-        </menu>
-    </nav>
-    </div>
-  </header>
-
-  <div class="advertising">
-    <div class="advertising_banner">
-      <a href="https://www.lojapersonaliza.com.br/" class="advertising_banner_link" target="_blank">
-        <img src="./assets/img/banner-desktop-personaliza-mobile.jpg" alt="Banner personaliza" class="advertising_banner_link_image">
-      </a>
-    </div>
-  </div>
-
-  <nav class="navbar-celebrity">
-    <menu class="navbar-celebrity__container">
-
-      <li class="navbar-celebrity__container__item">
-        <a href="https://anitta.com.br/" class="navbar-celebrity__container__item__link">
-          <figure>
-            <img src="./assets/img/thumb-menu-anitta-rock-in-rio-lisboa.png" alt="thumb Anitta" class="navbar-celebrity__container__item__link__image image--active">
-            <figcaption class="navbar-celebrity__container__item__link__image_title">Anitta</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="navbar-celebrity__container__item">
-        <a href="https://www.beyonce.com/" class="navbar-celebrity__container__item__link">
-          <figure>
-            <img src="./assets/img/thumb-menu-beyonce.png" alt="thumb Beyoncé" class="navbar-celebrity__container__item__link__image">
-            <figcaption class="navbar-celebrity__container__item__link__image_title">Beyoncé</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="navbar-celebrity__container__item">
-        <a href="https://supermario-game.com/pt" class="navbar-celebrity__container__item__link">
-          <figure>
-            <img src="./assets/img/thumb-menu-mario-bros.png" alt="thumb Mario Bros" class="navbar-celebrity__container__item__link__image">
-            <figcaption class="navbar-celebrity__container__item__link__image_title">Mario Bros</figcaption>
-          </figure>
-        </a>
-      </li>
-
-      <li class="navbar-celebrity__container__item">
-        <a href="https://anitta.com.br/" class="navbar-celebrity__container__item__link">
-          <figure>
-            <img src="./assets/img/thumb-menu-anitta-rock-in-rio-lisboa.png" alt="thumb Anitta" class="navbar-celebrity__container__item__link__image">
-            <figcaption class="navbar-celebrity__container__item__link__image_title">Anitta</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="navbar-celebrity__container__item">
-        <a href="https://www.beyonce.com/" class="navbar-celebrity__container__item__link">
-          <figure>
-            <img src="./assets/img/thumb-menu-beyonce.png" alt="thumb Beyoncé" class="navbar-celebrity__container__item__link__image">
-            <figcaption class="navbar-celebrity__container__item__link__image_title">Beyoncé</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="navbar-celebrity__container__item">
-        <a href="https://supermario-game.com/pt" class="navbar-celebrity__container__item__link">
-          <figure>
-            <img src="./assets/img/thumb-menu-mario-bros.png" alt="thumb Mario Bros" class="navbar-celebrity__container__item__link__image">
-            <figcaption class="navbar-celebrity__container__item__link__image_title">Mario Bros</figcaption>
-          </figure>
-        </a>
-      </li>
-
-      <li class="navbar-celebrity__container__item">
-        <a href="https://anitta.com.br/" class="navbar-celebrity__container__item__link">
-          <figure>
-            <img src="./assets/img/thumb-menu-anitta-rock-in-rio-lisboa.png" alt="thumb Anitta" class="navbar-celebrity__container__item__link__image">
-            <figcaption class="navbar-celebrity__container__item__link__image_title">Anitta</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="navbar-celebrity__container__item">
-        <a href="https://www.beyonce.com/" class="navbar-celebrity__container__item__link">
-          <figure class="navbar-celebrity__container__item__link__figure">
-            <img src="./assets/img/thumb-menu-beyonce.png" alt="thumb Beyoncé" class="navbar-celebrity__container__item__link__image">
-            <figcaption class="navbar-celebrity__container__item__link__image_title">Beyoncé</figcaption>
-          </figure>
-        </a>
-      </li>
-      <li class="navbar-celebrity__container__item">
-        <a href="https://supermario-game.com/pt" class="navbar-celebrity__container__item__link">
-          <figure>
-            <img src="./assets/img/thumb-menu-mario-bros.png" alt="thumb Mario Bros" class="navbar-celebrity__container__item__link__image">
-            <figcaption class="navbar-celebrity__container__item__link__image_title">Mario Bros</figcaption>
-          </figure>
-        </a>
-      </li>
-    </menu>
-  </nav>
-
-  <div class="main-news">
-    <article class="main-news__article">
-      <div class="main-news__article__tags">
-        <a href="#" class="main-news__article__tags__link link--category">
-          <span class="main-news__article__tags__link__text">Categoria</span>
+        <a href="#" class="header__link link--jornal">
+          <span class="header__link__text">Jornal</span>
         </a>
 
-        <a href="#" class="main-news__article__tags__link link--share">
-          <span class="main-news__article__tags__link__text">Compartilhe</span>
+        <a href="#" class="header__link link--newsletter">
+          <span class="header__link__text">Newsletter</span>
+        </a>
+
+        <a href="#" class="header__menuaside">Menu Aside</a>
+      </div>
+
+      <div class="header__bottom">
+        <nav class="header-navbar">
+          <menu class="header-navbar__menu">
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link link--active"
+                >Home</a
+              >
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link">Cultura</a>
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link"
+                >Entretenimento</a
+              >
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link">Música</a>
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link">Cinema</a>
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link">Jornal </a>
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link">Agenda</a>
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link">TV</a>
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link">Cultura</a>
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link"
+                >Entretenimento</a
+              >
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link">Música</a>
+            </li>
+            <li class="header-navbar__menu__item">
+              <a href="#" class="header-navbar__menu__item__link link--active"
+                >Cinema</a
+              >
+            </li>
+          </menu>
+        </nav>
+      </div>
+    </header>
+
+    <div class="advertising">
+      <div class="advertising_banner">
+        <a
+          href="https://www.lojapersonaliza.com.br/"
+          class="advertising_banner_link"
+          target="_blank"
+        >
+          <img
+            src="./assets/img/banner-desktop-personaliza-mobile.jpg"
+            alt="Banner personaliza"
+            class="advertising_banner_link_image"
+          />
         </a>
       </div>
-      
-      <div class="main-news__article__box">
-        <div class="main-news__article__box__tag tag-section">
-          <a href="#" class="main-news__article__box__tag__link">
-            <span class="main-news__article__box__tag__link__text">Ora, bolas!</span>
+    </div>
+
+    <nav class="navbar-celebrity">
+      <menu class="navbar-celebrity__container">
+        <li class="navbar-celebrity__container__item">
+          <a
+            href="https://anitta.com.br/"
+            class="navbar-celebrity__container__item__link"
+          >
+            <figure>
+              <img
+                src="./assets/img/thumb-menu-anitta-rock-in-rio-lisboa.png"
+                alt="thumb Anitta"
+                class="navbar-celebrity__container__item__link__image image--active"
+              />
+              <figcaption
+                class="navbar-celebrity__container__item__link__image_title"
+              >
+                Anitta
+              </figcaption>
+            </figure>
           </a>
-        </div>      
-        <h2 class="main-news__article__box__title">
-          <a href="#" class="main-news__article__box__title__link"><span class="main-news__article__box__title__link__text">Copa, Seleção e um torcedor reformado</span></a>
+        </li>
+        <li class="navbar-celebrity__container__item">
+          <a
+            href="https://www.beyonce.com/"
+            class="navbar-celebrity__container__item__link"
+          >
+            <figure>
+              <img
+                src="./assets/img/thumb-menu-beyonce.png"
+                alt="thumb Beyoncé"
+                class="navbar-celebrity__container__item__link__image"
+              />
+              <figcaption
+                class="navbar-celebrity__container__item__link__image_title"
+              >
+                Beyoncé
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="navbar-celebrity__container__item">
+          <a
+            href="https://supermario-game.com/pt"
+            class="navbar-celebrity__container__item__link"
+          >
+            <figure>
+              <img
+                src="./assets/img/thumb-menu-mario-bros.png"
+                alt="thumb Mario Bros"
+                class="navbar-celebrity__container__item__link__image"
+              />
+              <figcaption
+                class="navbar-celebrity__container__item__link__image_title"
+              >
+                Mario Bros
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+
+        <li class="navbar-celebrity__container__item">
+          <a
+            href="https://anitta.com.br/"
+            class="navbar-celebrity__container__item__link"
+          >
+            <figure>
+              <img
+                src="./assets/img/thumb-menu-anitta-rock-in-rio-lisboa.png"
+                alt="thumb Anitta"
+                class="navbar-celebrity__container__item__link__image"
+              />
+              <figcaption
+                class="navbar-celebrity__container__item__link__image_title"
+              >
+                Anitta
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="navbar-celebrity__container__item">
+          <a
+            href="https://www.beyonce.com/"
+            class="navbar-celebrity__container__item__link"
+          >
+            <figure>
+              <img
+                src="./assets/img/thumb-menu-beyonce.png"
+                alt="thumb Beyoncé"
+                class="navbar-celebrity__container__item__link__image"
+              />
+              <figcaption
+                class="navbar-celebrity__container__item__link__image_title"
+              >
+                Beyoncé
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="navbar-celebrity__container__item">
+          <a
+            href="https://supermario-game.com/pt"
+            class="navbar-celebrity__container__item__link"
+          >
+            <figure>
+              <img
+                src="./assets/img/thumb-menu-mario-bros.png"
+                alt="thumb Mario Bros"
+                class="navbar-celebrity__container__item__link__image"
+              />
+              <figcaption
+                class="navbar-celebrity__container__item__link__image_title"
+              >
+                Mario Bros
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+
+        <li class="navbar-celebrity__container__item">
+          <a
+            href="https://anitta.com.br/"
+            class="navbar-celebrity__container__item__link"
+          >
+            <figure>
+              <img
+                src="./assets/img/thumb-menu-anitta-rock-in-rio-lisboa.png"
+                alt="thumb Anitta"
+                class="navbar-celebrity__container__item__link__image"
+              />
+              <figcaption
+                class="navbar-celebrity__container__item__link__image_title"
+              >
+                Anitta
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="navbar-celebrity__container__item">
+          <a
+            href="https://www.beyonce.com/"
+            class="navbar-celebrity__container__item__link"
+          >
+            <figure class="navbar-celebrity__container__item__link__figure">
+              <img
+                src="./assets/img/thumb-menu-beyonce.png"
+                alt="thumb Beyoncé"
+                class="navbar-celebrity__container__item__link__image"
+              />
+              <figcaption
+                class="navbar-celebrity__container__item__link__image_title"
+              >
+                Beyoncé
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="navbar-celebrity__container__item">
+          <a
+            href="https://supermario-game.com/pt"
+            class="navbar-celebrity__container__item__link"
+          >
+            <figure>
+              <img
+                src="./assets/img/thumb-menu-mario-bros.png"
+                alt="thumb Mario Bros"
+                class="navbar-celebrity__container__item__link__image"
+              />
+              <figcaption
+                class="navbar-celebrity__container__item__link__image_title"
+              >
+                Mario Bros
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+      </menu>
+    </nav>
+
+    <div class="main-news">
+      <article class="main-news__article">
+        <div class="main-news__article__tags">
+          <a href="#" class="main-news__article__tags__link link--category">
+            <span class="main-news__article__tags__link__text">Categoria</span>
+          </a>
+
+          <a href="#" class="main-news__article__tags__link link--share">
+            <span class="main-news__article__tags__link__text"
+              >Compartilhe</span
+            >
+          </a>
+        </div>
+
+        <div class="main-news__article__box">
+          <div class="main-news__article__box__tag tag-section">
+            <a href="#" class="main-news__article__box__tag__link">
+              <span class="main-news__article__box__tag__link__text"
+                >Ora, bolas!</span
+              >
+            </a>
+          </div>
+          <h2 class="main-news__article__box__title">
+            <a href="#" class="main-news__article__box__title__link"
+              ><span class="main-news__article__box__title__link__text"
+                >Copa, Seleção e um torcedor reformado</span
+              ></a
+            >
+          </h2>
+        </div>
+      </article>
+    </div>
+
+    <div class="news-group group-ora-bolas">
+      <article class="news-group__item">
+        <h2 class="news-group__item__group-name">
+          <a href="#" class="news-group__item__group-name__link link-ora-bolas">
+            <span class="news-group__item__group-name__link__text"
+              >Ora, bolas!</span
+            >
+          </a>
         </h2>
-      </div>      
-    </article>
-  </div>
+        <h3 class="news-group__item__news-title">
+          <a href="#" class="news-group__item__news-title__link">
+            <span class="news-group__item__news-title__link__text"
+              >Copa do mundo do Qatar começa com grandes apostas para
+              anfitriões</span
+            >
+          </a>
+        </h3>
+      </article>
+      <article class="news-group__item">
+        <h2 class="news-group__item__group-name">
+          <a href="#" class="news-group__item__group-name__link link-ora-bolas">
+            <span class="news-group__item__group-name__link__text"
+              >Ora, bolas!</span
+            >
+          </a>
+        </h2>
+        <h3 class="news-group__item__news-title">
+          <a href="#" class="news-group__item__news-title__link">
+            <span class="news-group__item__news-title__link__text"
+              >Com Ronaldo sob pressão, Portugal é o protagonista do Grupo
+              H</span
+            >
+          </a>
+        </h3>
+      </article>
+      <article class="news-group__item">
+        <h2 class="news-group__item__group-name">
+          <a href="#" class="news-group__item__group-name__link link-ora-bolas">
+            <span class="news-group__item__group-name__link__text"
+              >Ora, bolas!</span
+            >
+          </a>
+        </h2>
+        <h3 class="news-group__item__news-title">
+          <a href="#" class="news-group__item__news-title__link">
+            <span class="news-group__item__news-title__link__text"
+              >Brasil enfrentará equipe forte da Sérvia em estreia no
+              Qatar</span
+            >
+          </a>
+        </h3>
+      </article>
+      <article class="news-group__item">
+        <h2 class="news-group__item__group-name">
+          <a href="#" class="news-group__item__group-name__link link-ora-bolas">
+            <span class="news-group__item__group-name__link__text"
+              >Ora, bolas!</span
+            >
+          </a>
+        </h2>
+        <h3 class="news-group__item__news-title">
+          <a href="#" class="news-group__item__news-title__link">
+            <span class="news-group__item__news-title__link__text"
+              >Brasil enfrentará equipe forte da Sérvia em estreia no
+              Qatar</span
+            >
+          </a>
+        </h3>
+      </article>
+    </div>
 
-  <div class="news-group group-ora-bolas">
-    <article class="news-group__item">
-      <h2 class="news-group__item__group-name">
-        <a href="#" class="news-group__item__group-name__link link-ora-bolas">
-          <span class="news-group__item__group-name__link__text">Ora, bolas!</span>
-        </a>
-      </h2>      
-      <h3 class="news-group__item__news-title">
-        <a href="#" class="news-group__item__news-title__link">
-          <span class="news-group__item__news-title__link__text">Copa do mundo do Qatar começa com grandes apostas para anfitriões</span>
-        </a>
-      </h3>
-    </article>
-    <article class="news-group__item">
-      <h2 class="news-group__item__group-name">
-        <a href="#" class="news-group__item__group-name__link link-ora-bolas">
-          <span class="news-group__item__group-name__link__text">Ora, bolas!</span>
-        </a>
-      </h2>      
-      <h3 class="news-group__item__news-title">
-        <a href="#" class="news-group__item__news-title__link">
-          <span class="news-group__item__news-title__link__text">Com Ronaldo sob pressão, Portugal é o protagonista do Grupo H</span>
-        </a>
-      </h3>
-    </article>
-    <article class="news-group__item">
-      <h2 class="news-group__item__group-name">
-        <a href="#" class="news-group__item__group-name__link link-ora-bolas">
-          <span class="news-group__item__group-name__link__text">Ora, bolas!</span>
-        </a>
-      </h2>      
-      <h3 class="news-group__item__news-title">
-        <a href="#" class="news-group__item__news-title__link">
-          <span class="news-group__item__news-title__link__text">Brasil enfrentará equipe forte da Sérvia em estreia no Qatar</span>
-        </a>
-      </h3>
-    </article>
-    <article class="news-group__item">
-      <h2 class="news-group__item__group-name">
-        <a href="#" class="news-group__item__group-name__link link-ora-bolas">
-          <span class="news-group__item__group-name__link__text">Ora, bolas!</span>
-        </a>
-      </h2>      
-      <h3 class="news-group__item__news-title">
-        <a href="#" class="news-group__item__news-title__link">
-          <span class="news-group__item__news-title__link__text">Brasil enfrentará equipe forte da Sérvia em estreia no Qatar</span>
-        </a>
-      </h3>
-    </article>
-  </div>
-  
-  <div class="news-carousel">
-    <div class="news-carousel__container">
-      <div class="news-carousel__container__gallery-wrapper">
-        <div class="news-carousel__container__gallery">
-
-          <div class="news-carousel__container__gallery__item item--current">
-            <article class="news-carousel__container__gallery__item__article">
-              <div class="news-carousel__container__gallery__item__article__tags">
-                <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--category">
-                  <span class="news-carousel__container__gallery__item__article__tags__link__text">Categoria</span>
-                </a>
-        
-                <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--share">
-                  <span class="news-carousel__container__gallery__item__article__tags__link__text">Compartilhe</span>
-                </a>
-              </div>
-              
-              <div class="news-carousel__container__gallery__item__article__box">
-                <div class="news-carousel__container__gallery__item__article__box__tag tag-section">
-                  <a href="#" class="news-carousel__container__gallery__item__article__box__tag__link">
-                    <span class="news-carousel__container__gallery__item__article__box__tag__link__text">Vacinação</span>
+    <div class="news-carousel">
+      <div class="news-carousel__container">
+        <div class="news-carousel__container__gallery-wrapper">
+          <div class="news-carousel__container__gallery">
+            <div class="news-carousel__container__gallery__item item--current">
+              <article class="news-carousel__container__gallery__item__article">
+                <div
+                  class="news-carousel__container__gallery__item__article__tags"
+                >
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--category"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Categoria</span
+                    >
                   </a>
-                </div>      
-                <h2 class="news-carousel__container__gallery__item__article__box__title">
-                  <a href="#" class="news-carousel__container__gallery__item__article__box__title__link"><span class="news-carousel__container__gallery__item__article__box__title__link">São Paulo começa a aplicar 4ª dose da vacina contra covid-19 em maiores de 30 anos</span></a>
-                </h2>
-              </div>
-            </article>
+
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--share"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Compartilhe</span
+                    >
+                  </a>
+                </div>
+
+                <div
+                  class="news-carousel__container__gallery__item__article__box"
+                >
+                  <div
+                    class="news-carousel__container__gallery__item__article__box__tag tag-section"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__tag__link"
+                    >
+                      <span
+                        class="news-carousel__container__gallery__item__article__box__tag__link__text"
+                        >Vacinação</span
+                      >
+                    </a>
+                  </div>
+                  <h2
+                    class="news-carousel__container__gallery__item__article__box__title"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__title__link"
+                      ><span
+                        class="news-carousel__container__gallery__item__article__box__title__link"
+                        >São Paulo começa a aplicar 4ª dose da vacina contra
+                        covid-19 em maiores de 30 anos</span
+                      ></a
+                    >
+                  </h2>
+                </div>
+              </article>
+            </div>
+
+            <div class="news-carousel__container__gallery__item">
+              <article class="news-carousel__container__gallery__item__article">
+                <div
+                  class="news-carousel__container__gallery__item__article__tags"
+                >
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--category"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Categoria</span
+                    >
+                  </a>
+
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--share"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Compartilhe</span
+                    >
+                  </a>
+                </div>
+
+                <div
+                  class="news-carousel__container__gallery__item__article__box"
+                >
+                  <div
+                    class="news-carousel__container__gallery__item__article__box__tag tag-section"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__tag__link"
+                    >
+                      <span
+                        class="news-carousel__container__gallery__item__article__box__tag__link__text"
+                        >Vacinação</span
+                      >
+                    </a>
+                  </div>
+                  <h2
+                    class="news-carousel__container__gallery__item__article__box__title"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__title__link"
+                      ><span
+                        class="news-carousel__container__gallery__item__article__box__title__link"
+                        >São Paulo começa a aplicar 4ª dose da vacina contra
+                        covid-19 em maiores de 30 anos</span
+                      ></a
+                    >
+                  </h2>
+                </div>
+              </article>
+            </div>
+
+            <div class="news-carousel__container__gallery__item">
+              <article class="news-carousel__container__gallery__item__article">
+                <div
+                  class="news-carousel__container__gallery__item__article__tags"
+                >
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--category"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Categoria</span
+                    >
+                  </a>
+
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--share"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Compartilhe</span
+                    >
+                  </a>
+                </div>
+
+                <div
+                  class="news-carousel__container__gallery__item__article__box"
+                >
+                  <div
+                    class="news-carousel__container__gallery__item__article__box__tag tag-section"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__tag__link"
+                    >
+                      <span
+                        class="news-carousel__container__gallery__item__article__box__tag__link__text"
+                        >Vacinação</span
+                      >
+                    </a>
+                  </div>
+                  <h2
+                    class="news-carousel__container__gallery__item__article__box__title"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__title__link"
+                      ><span
+                        class="news-carousel__container__gallery__item__article__box__title__link"
+                        >São Paulo começa a aplicar 4ª dose da vacina contra
+                        covid-19 em maiores de 30 anos</span
+                      ></a
+                    >
+                  </h2>
+                </div>
+              </article>
+            </div>
           </div>
+        </div>
 
-          <div class="news-carousel__container__gallery__item">
-            <article class="news-carousel__container__gallery__item__article">
-              <div class="news-carousel__container__gallery__item__article__tags">
-                <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--category">
-                  <span class="news-carousel__container__gallery__item__article__tags__link__text">Categoria</span>
-                </a>
-        
-                <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--share">
-                  <span class="news-carousel__container__gallery__item__article__tags__link__text">Compartilhe</span>
-                </a>
-              </div>
-              
-              <div class="news-carousel__container__gallery__item__article__box">
-                <div class="news-carousel__container__gallery__item__article__box__tag tag-section">
-                  <a href="#" class="news-carousel__container__gallery__item__article__box__tag__link">
-                    <span class="news-carousel__container__gallery__item__article__box__tag__link__text">Vacinação</span>
-                  </a>
-                </div>      
-                <h2 class="news-carousel__container__gallery__item__article__box__title">
-                  <a href="#" class="news-carousel__container__gallery__item__article__box__title__link"><span class="news-carousel__container__gallery__item__article__box__title__link">São Paulo começa a aplicar 4ª dose da vacina contra covid-19 em maiores de 30 anos</span></a>
-                </h2>
-              </div>
-            </article>
-          </div>
-
-          <div class="news-carousel__container__gallery__item">
-            <article class="news-carousel__container__gallery__item__article">
-              <div class="news-carousel__container__gallery__item__article__tags">
-                <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--category">
-                  <span class="news-carousel__container__gallery__item__article__tags__link__text">Categoria</span>
-                </a>
-        
-                <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--share">
-                  <span class="news-carousel__container__gallery__item__article__tags__link__text">Compartilhe</span>
-                </a>
-              </div>
-              
-              <div class="news-carousel__container__gallery__item__article__box">
-                <div class="news-carousel__container__gallery__item__article__box__tag tag-section">
-                  <a href="#" class="news-carousel__container__gallery__item__article__box__tag__link">
-                    <span class="news-carousel__container__gallery__item__article__box__tag__link__text">Vacinação</span>
-                  </a>
-                </div>      
-                <h2 class="news-carousel__container__gallery__item__article__box__title">
-                  <a href="#" class="news-carousel__container__gallery__item__article__box__title__link"><span class="news-carousel__container__gallery__item__article__box__title__link">São Paulo começa a aplicar 4ª dose da vacina contra covid-19 em maiores de 30 anos</span></a>
-                </h2>
-              </div>
-            </article>
-          </div>          
+        <div class="news-carousel__container__gallery__dots-navigation">
+          <span
+            class="news-carousel__container__gallery__dots-navigation__dot dot--current"
+          ></span>
+          <span
+            class="news-carousel__container__gallery__dots-navigation__dot"
+          ></span>
+          <span
+            class="news-carousel__container__gallery__dots-navigation__dot"
+          ></span>
         </div>
       </div>
+    </div>
 
-      <div class="news-carousel__container__gallery__dots-navigation">
-        <span class="news-carousel__container__gallery__dots-navigation__dot dot--current"></span> 
-        <span class="news-carousel__container__gallery__dots-navigation__dot"></span> 
-        <span class="news-carousel__container__gallery__dots-navigation__dot"></span> 
+    <div class="news-series">
+      <article class="news-series__article">
+        <div class="news-series__article__tags">
+          <a href="#" class="news-series__article__tags__link link--category">
+            <span class="news-series__article__tags__link__text"
+              >Categoria</span
+            >
+          </a>
+
+          <a href="#" class="news-series__article__tags__link link--share">
+            <span class="news-series__article__tags__link__text"
+              >Compartilhe</span
+            >
+          </a>
+        </div>
+
+        <div class="news-series__article__box">
+          <div class="news-series__article__box__tag tag-section">
+            <a href="#" class="news-series__article__box__tag__link">
+              <span class="news-series__article__box__tag__link__text"
+                >Stranger Things</span
+              >
+            </a>
+          </div>
+          <h2 class="news-series__article__box__title">
+            <a href="#" class="news-series__article__box__title__link"
+              ><span class="news-series__article__box__title__link__text"
+                >Atriz de Stranger Things comenta decisão da Suprema Corte sobre
+                direito constitucional ao aborto</span
+              ></a
+            >
+          </h2>
+        </div>
+      </article>
+    </div>
+
+    <div class="advertising advertising--square">
+      <div class="advertising__banner">
+        <a
+          href="https://www.lojapersonaliza.com.br/"
+          class="advertising__banner__link"
+          target="_blank"
+        >
+          <img
+            src="./assets/img/banner-desktop-publicidade-kaiak.jpg"
+            alt="Linha de cosméticos Novo Kaiak"
+            class="advertising__banner__link__image"
+          />
+        </a>
       </div>
     </div>
-  </div>
 
-  <div class="news-series">
-    <article class="news-series__article">
-      <div class="news-series__article__tags">
-        <a href="#" class="news-series__article__tags__link link--category">
-          <span class="news-series__article__tags__link__text">Categoria</span>
-        </a>
-
-        <a href="#" class="news-series__article__tags__link link--share">
-          <span class="news-series__article__tags__link__text">Compartilhe</span>
-        </a>
-      </div>
-      
-      <div class="news-series__article__box">
-        <div class="news-series__article__box__tag tag-section">
-          <a href="#" class="news-series__article__box__tag__link">
-            <span class="news-series__article__box__tag__link__text">Stranger Things</span>
-          </a>
-        </div>      
-        <h2 class="news-series__article__box__title">
-          <a href="#" class="news-series__article__box__title__link"><span class="news-series__article__box__title__link__text">Atriz de Stranger Things comenta decisão da Suprema Corte sobre direito constitucional ao aborto</span></a>
-        </h2>
-      </div>      
-    </article>
-  </div>
-
-  <div class="advertising advertising--square">
-    <div class="advertising__banner">
-      <a href="https://www.lojapersonaliza.com.br/" class="advertising__banner__link" target="_blank">
-        <img src="./assets/img/banner-desktop-publicidade-kaiak.jpg" alt="Linha de cosméticos Novo Kaiak" class="advertising__banner__link__image">
-      </a>
+    <div class="news-group group--category">
+      <article class="news-group__item">
+        <img
+          src="./assets/img/thumb-news-01-luana-piovani.png"
+          alt="atriz Luana Piovani"
+        />
+        <div class="news-group__item__infos">
+          <h2 class="news-group__item__group-name">
+            <a
+              href="#"
+              class="news-group__item__group-name__link link--category"
+            >
+              <span class="news-group__item__group-name__link__text"
+                >Categoria</span
+              >
+            </a>
+          </h2>
+          <h3 class="news-group__item__news-title">
+            <a href="#" class="news-group__item__news-title__link">
+              <span class="news-group__item__news-title__link__text"
+                >Luana Piovani compartilha novo projeto com seguidores: ‘Tão
+                feliz’</span
+              >
+            </a>
+          </h3>
+        </div>
+      </article>
+      <article class="news-group__item">
+        <img
+          src="./assets/img/thumb-news-02-casal.png"
+          alt="atriz Luana Piovani"
+        />
+        <div class="news-group__item__infos">
+          <h2 class="news-group__item__group-name">
+            <a
+              href="#"
+              class="news-group__item__group-name__link link--category"
+            >
+              <span class="news-group__item__group-name__link__text"
+                >Categoria</span
+              >
+            </a>
+          </h2>
+          <h3 class="news-group__item__news-title">
+            <a href="#" class="news-group__item__news-title__link">
+              <span class="news-group__item__news-title__link__text"
+                >Estreias do Amazon Prime Video em julho incluem ‘Casa Gucci’ e
+                ‘Spencer’</span
+              >
+            </a>
+          </h3>
+        </div>
+      </article>
+      <article class="news-group__item">
+        <img
+          src="./assets/img/thumb-news-03-cimema-teca.png"
+          alt="atriz Luana Piovani"
+        />
+        <div class="news-group__item__infos">
+          <h2 class="news-group__item__group-name">
+            <a
+              href="#"
+              class="news-group__item__group-name__link link--category"
+            >
+              <span class="news-group__item__group-name__link__text"
+                >Categoria</span
+              >
+            </a>
+          </h2>
+          <h3 class="news-group__item__news-title">
+            <a href="#" class="news-group__item__news-title__link">
+              <span class="news-group__item__news-title__link__text"
+                >Cinemateca exibe versão restaurada de Deus e o Diabo na Terra
+                do Sol</span
+              >
+            </a>
+          </h3>
+        </div>
+      </article>
     </div>
-  </div>
-
-  <div class="news-group group--category">
-    <article class="news-group__item">
-      <img src="./assets/img/thumb-news-01-luana-piovani.png" alt="atriz Luana Piovani">
-      <div class="news-group__item__infos">
-        <h2 class="news-group__item__group-name">
-          <a href="#" class="news-group__item__group-name__link link--category">
-            <span class="news-group__item__group-name__link__text">Categoria</span>
-          </a>
-        </h2>      
-        <h3 class="news-group__item__news-title">
-          <a href="#" class="news-group__item__news-title__link">
-            <span class="news-group__item__news-title__link__text">Luana Piovani compartilha novo projeto com seguidores: ‘Tão feliz’</span>
-          </a>
-        </h3>
-      </div>
-    </article>
-    <article class="news-group__item">
-      <img src="./assets/img/thumb-news-02-casal.png" alt="atriz Luana Piovani">
-      <div class="news-group__item__infos">
-        <h2 class="news-group__item__group-name">
-          <a href="#" class="news-group__item__group-name__link link--category">
-            <span class="news-group__item__group-name__link__text">Categoria</span>
-          </a>
-        </h2>      
-        <h3 class="news-group__item__news-title">
-          <a href="#" class="news-group__item__news-title__link">
-            <span class="news-group__item__news-title__link__text">Estreias do Amazon Prime Video em julho incluem ‘Casa Gucci’ e ‘Spencer’</span>
-          </a>
-        </h3>
-      </div>
-    </article>
-    <article class="news-group__item">
-      <img src="./assets/img/thumb-news-03-cimema-teca.png" alt="atriz Luana Piovani">
-      <div class="news-group__item__infos">
-        <h2 class="news-group__item__group-name">
-          <a href="#" class="news-group__item__group-name__link link--category">
-            <span class="news-group__item__group-name__link__text">Categoria</span>
-          </a>
-        </h2>      
-        <h3 class="news-group__item__news-title">
-          <a href="#" class="news-group__item__news-title__link">
-            <span class="news-group__item__news-title__link__text">Cinemateca exibe versão restaurada de Deus e o Diabo na Terra do Sol</span>
-          </a>
-        </h3>
-      </div>
-    </article>
-
 
     <div class="news-carousel carousel-copa">
       <div class="news-carousel__container">
-
         <div class="news-carousel__container__logo">
-          <img src="./assets/svg/logo-copa-2022.svg" alt="logo copa 2022" class="news-carousel__container__image">
+          <img
+            src="./assets/svg/logo-copa-2022.svg"
+            alt="logo copa 2022"
+            class="news-carousel__container__image"
+          />
         </div>
 
         <div class="news-carousel__container__gallery-wrapper">
           <div class="news-carousel__container__gallery">
-  
-            <div class="news-carousel__container__gallery__item item--01 item--current">
+            <div
+              class="news-carousel__container__gallery__item item--01 item--current"
+            >
               <article class="news-carousel__container__gallery__item__article">
-                <div class="news-carousel__container__gallery__item__article__tags">
-                  <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--category">
-                    <span class="news-carousel__container__gallery__item__article__tags__link__text">Esportes</span>
+                <div
+                  class="news-carousel__container__gallery__item__article__tags"
+                >
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--category"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Esportes</span
+                    >
                   </a>
-          
-                  <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--share">
-                    <span class="news-carousel__container__gallery__item__article__tags__link__text">Compartilhe</span>
+
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--share"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Compartilhe</span
+                    >
                   </a>
                 </div>
-                
-                <div class="news-carousel__container__gallery__item__article__box">
-                  <div class="news-carousel__container__gallery__item__article__box__tag tag-section">
-                    <a href="#" class="news-carousel__container__gallery__item__article__box__tag__link">
-                      <span class="news-carousel__container__gallery__item__article__box__tag__link__text">Copa Qatar 2022</span>
+
+                <div
+                  class="news-carousel__container__gallery__item__article__box"
+                >
+                  <div
+                    class="news-carousel__container__gallery__item__article__box__tag tag-section"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__tag__link"
+                    >
+                      <span
+                        class="news-carousel__container__gallery__item__article__box__tag__link__text"
+                        >Copa Qatar 2022</span
+                      >
                     </a>
-                  </div>      
-                  <h2 class="news-carousel__container__gallery__item__article__box__title">
-                    <a href="#" class="news-carousel__container__gallery__item__article__box__title__link"><span class="news-carousel__container__gallery__item__article__box__title__link">Sem Cano, Messi lidera a lista da Argentina para Copa 2022</span></a>
+                  </div>
+                  <h2
+                    class="news-carousel__container__gallery__item__article__box__title"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__title__link"
+                      ><span
+                        class="news-carousel__container__gallery__item__article__box__title__link"
+                        >Sem Cano, Messi lidera a lista da Argentina para Copa
+                        2022</span
+                      ></a
+                    >
                   </h2>
                 </div>
               </article>
             </div>
-  
+
             <div class="news-carousel__container__gallery__item item--02">
               <article class="news-carousel__container__gallery__item__article">
-                <div class="news-carousel__container__gallery__item__article__tags">
-                  <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--category">
-                    <span class="news-carousel__container__gallery__item__article__tags__link__text">Esportes</span>
+                <div
+                  class="news-carousel__container__gallery__item__article__tags"
+                >
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--category"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Esportes</span
+                    >
                   </a>
-          
-                  <a href="#" class="news-carousel__container__gallery__item__article__tags__link link--share">
-                    <span class="news-carousel__container__gallery__item__article__tags__link__text">Compartilhe</span>
+
+                  <a
+                    href="#"
+                    class="news-carousel__container__gallery__item__article__tags__link link--share"
+                  >
+                    <span
+                      class="news-carousel__container__gallery__item__article__tags__link__text"
+                      >Compartilhe</span
+                    >
                   </a>
                 </div>
-                
-                <div class="news-carousel__container__gallery__item__article__box">
-                  <div class="news-carousel__container__gallery__item__article__box__tag tag-section">
-                    <a href="#" class="news-carousel__container__gallery__item__article__box__tag__link">
-                      <span class="news-carousel__container__gallery__item__article__box__tag__link__text">Copa Qatar 2022</span>
+
+                <div
+                  class="news-carousel__container__gallery__item__article__box"
+                >
+                  <div
+                    class="news-carousel__container__gallery__item__article__box__tag tag-section"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__tag__link"
+                    >
+                      <span
+                        class="news-carousel__container__gallery__item__article__box__tag__link__text"
+                        >Copa Qatar 2022</span
+                      >
                     </a>
-                  </div>      
-                  <h2 class="news-carousel__container__gallery__item__article__box__title">
-                    <a href="#" class="news-carousel__container__gallery__item__article__box__title__link"><span class="news-carousel__container__gallery__item__article__box__title__link">Sem Neymar, Brasil se apresenta na Itália para 1º treino</span></a>
+                  </div>
+                  <h2
+                    class="news-carousel__container__gallery__item__article__box__title"
+                  >
+                    <a
+                      href="#"
+                      class="news-carousel__container__gallery__item__article__box__title__link"
+                      ><span
+                        class="news-carousel__container__gallery__item__article__box__title__link"
+                        >Sem Neymar, Brasil se apresenta na Itália para 1º
+                        treino</span
+                      ></a
+                    >
                   </h2>
                 </div>
               </article>
             </div>
-  
-                     
           </div>
         </div>
-  
+
         <div class="news-carousel__container__gallery__dots-navigation">
-          <span class="news-carousel__container__gallery__dots-navigation__dot dot--current"></span> 
-          <span class="news-carousel__container__gallery__dots-navigation__dot"></span>           
+          <span
+            class="news-carousel__container__gallery__dots-navigation__dot dot--current"
+          ></span>
+          <span
+            class="news-carousel__container__gallery__dots-navigation__dot"
+          ></span>
         </div>
       </div>
-    </div>       
-  </div>
-  
-</body>
+    </div>
+
+    <div class="news-carousel carousel-orbitv">
+      <div class="news-carousel__top">
+        <div class="news-carousel__top__logo">
+          <img
+            src="./assets/svg/logo-orbi-tv.svg"
+            alt="logo orbi tv"
+            class="news-carousel__container__image"
+          />
+        </div>
+        <div class="news-carousel__top__nav">
+          <div class="news-carousel__container__top__nav nav-arrow--left">
+            <img
+              src="./assets/svg/carousel-arrow-left.svg"
+              width="30"
+              height="30"
+            />
+          </div>
+          <div lass="news-carousel__container__top__nav nav-arrow--right">
+            <img
+              src="./assets/svg/carousel-arrow-right.svg"
+              width="30"
+              height="30"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="news-carousel__tags">
+        <a href="#" class="news-carousel__tags__link link--videos">
+          <span class="news-carousel__tags__link__text">Videos</span>
+        </a>
+
+        <a href="#" class="news-carousel__tags__link link--shorts">
+          <span class="news-carousel__tags__link__text">Shorts</span>
+        </a>
+      </div>
+
+      <div class="news-carousel__carousel">
+        <div class="news-carousel__carousel__container">
+          <div class="news-carousel__carousel__container__gallery-wrapper">
+            <div class="news-carousel__carousel__container__gallery">
+              <div
+                class="news-carousel__carousel__container__gallery__item item--current"
+              >
+                <div
+                  class="news-carousel__carousel__container__gallery__item__news-card"
+                >
+                  <a
+                    href="#"
+                    class="news-carousel__carousel__container__gallery__item__news-card__link"
+                  ></a>
+                  <img
+                    src="./assets/img/orbitv-01-mobile.png"
+                    alt=""
+                    class="news-carousel__carousel__container__gallery__item__news-card__image"
+                  />
+                  <div
+                    class="news-carousel__carousel__container__gallery__item__news-card__image-wrapper"
+                  >
+                    <img
+                      src="./assets/svg/icon-elipse-video-pink.svg"
+                      alt="icon orbi tv video"
+                    />
+                  </div>
+                </div>
+
+                <h3
+                  class="news-carousel__carousel__container__gallery__item__title"
+                >
+                  <a
+                    href="#"
+                    class="news-carousel__carousel__container__gallery__item__title__link"
+                  >
+                    Lei proíbe arquitetura hostil no Brasil - Orbi na Band</a
+                  >
+                </h3>
+              </div>
+
+              <div class="news-carousel__carousel__container__gallery__item">
+                <div
+                  class="news-carousel__carousel__container__gallery__item__news-card"
+                >
+                  <a
+                    href="#"
+                    class="news-carousel__carousel__container__gallery__item__news-card__link"
+                  ></a>
+                  <img
+                    src="./assets/img/orbi-tv-02-mobile.png"
+                    alt=""
+                    class="news-carousel__carousel__container__gallery__item__news-card__image"
+                  />
+                  <div
+                    class="news-carousel__carousel__container__gallery__item__news-card__image-wrapper"
+                  >
+                    <img
+                      src="./assets/svg/icon-elipse-video-pink.svg"
+                      alt="icon orbi tv video"
+                    />
+                  </div>
+                </div>
+
+                <h3
+                  class="news-carousel__carousel__container__gallery__item__title"
+                >
+                  <a
+                    href="#"
+                    class="news-carousel__carousel__container__gallery__item__title__link"
+                  >
+                    A TAL DA ESPERANÇA - Só Mais 5 Minutinhos com Marcos Lacerda
+                    #2</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="news-carousel__carousel__container__dots-navigation">
+            <span
+              class="news-carousel__carousel__container__dots-navigation__dot dot--current"
+            ></span>
+            <span
+              class="news-carousel__carousel__container__dots-navigation__dot"
+            ></span>
+          </div>
+          <div class="news-carousel__carousel__container__social-media">
+            <a
+              href="#"
+              class="news-carousel__carousel__container__social-media__link"
+            >
+              <img
+                src="./assets/svg/icon-you-tube.svg"
+                alt="YouTube Logo"
+                class="news-carousel__carousel__container__social-media__link__image"
+              />
+              <p
+                class="news-carousel__carousel__container__social-media__link__text"
+              >
+                Inscreva-se no nosso canal
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
