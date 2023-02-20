@@ -759,6 +759,89 @@ color: var(--text-color-03);
 }
 
 
+/*NEWS-CAROUSEL*/
+.news-carousel.carousel-copa{
+  margin-bottom: 24px;
+}
+
+.carousel-copa .news-carousel__container{  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.carousel-copa .news-carousel__container__logo{
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-copa .news-carousel__container__image{
+  width: 79px;
+  height: 65px;
+}
+
+.carousel-copa .news-carousel__container__gallery{
+  width: 641px;
+  margin: 0;
+}
+
+.carousel-copa .news-carousel__container__gallery__item{  
+  height: 210px;    
+  margin-bottom: 15px
+}
+
+.carousel-copa .news-carousel__container__gallery__item.item--01:before{  
+  background: url(../assets/img/copa-2022-02-messi-mobile.png) no-repeat center center/cover;  
+  height: 210px;
+}
+
+.carousel-copa .news-carousel__container__gallery__item.item--02:before{  
+  background: url(../assets/img/copa-2022-03-selecao-brasileira-mobile.png) no-repeat center center/cover;
+  height: 210px;
+}
+
+.carousel-copa .news-carousel__container__gallery__item__article{
+  height: 210px;
+}
+
+.carousel-copa .news-carousel__container__gallery__item__article__tags{  
+  padding: 15px 15px 0px 15px;
+}
+
+.carousel-copa .news-carousel__container__gallery__item__article__tags__link{
+  font-family: var(--font-family-01);
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+  height: 18px;
+  border-radius: 20px;  
+  width: 100%; 
+}
+
+.carousel-copa .news-carousel__container__gallery__item__article__tags__link.link--category{  
+  max-width: 60px;
+  border: .7px solid var(--bg-color-04);
+}
+
+.carousel-copa .news-carousel__container__gallery__item__article__tags__link__text{
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 0.01em;
+}
+
+.carousel-copa .news-carousel__container__gallery__item__article__box{
+  height: 163px;
+  padding: 75px 15px 23px 15px;  
+}
+
+.carousel-copa .news-carousel__container__gallery__dots-navigation{    
+  width: 20px;
+}
+
+
+
 
 
 
