@@ -1022,11 +1022,11 @@ color: var(--text-color-03);
   border: 1px solid #fff;  
 }
 
-.news-carousel__carousel__container__social-media{
+.carousel-orbitv .news-carousel__carousel__container__social-media{
   margin-bottom: 16px;
 }
 
-.news-carousel__carousel__container__social-media__link{
+.carousel-orbitv .news-carousel__carousel__container__social-media__link{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -1034,45 +1034,50 @@ color: var(--text-color-03);
   column-gap: 10px;
 }
 
-.news-carousel__carousel__container__social-media__link__text{
+.carousel-orbitv .news-carousel__carousel__container__social-media__link__text{
   color: var(--text-color-05);
   font-size: var(--font-size-12);
   line-height: 15px;
   letter-spacing: 0.01em;
 }
 
-.news-carousel.carousel--varios{
+.news-carousel.carousel--utility{
 
 }
 
-.carousel--varios .news-carousel__carousel{
+.carousel--utility .news-carousel__carousel{
   margin-top: 36px;
 }
 
-.carousel--varios .news-carousel__carousel__container{
+
+.carousel--utility .news-carousel__carousel__container{
   position: relative;
   max-width: 750px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
-.carousel--varios .news-carousel__carousel__container__gallery-wrapper{
+
+.carousel--utility .news-carousel__carousel__container__gallery-wrapper{
   overflow-x: auto;
 }
 
-.carousel--varios .news-carousel__carousel__container__gallery{
+
+.carousel--utility .news-carousel__carousel__container__gallery{
   display: flex;
   flex-flow: row nowrap;
   column-gap: 12px;
 }
 
-.carousel--varios .news-carousel__carousel__container__gallery__item{
+
+.carousel--utility .news-carousel__carousel__container__gallery__item{
   display: flex;
   flex-flow: column;
   height: 176px;
 }
 
-.carousel--varios .news-carousel__carousel__container__gallery__item__temperature__card{
+
+.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card{
   width: 176px;
   background: #FFFFFF;
   border: 1px solid #F9F9F9;
@@ -1081,7 +1086,8 @@ color: var(--text-color-03);
   padding: 19px 18px 28px 18px;
 }
 
-.carousel--varios .news-carousel__carousel__container__gallery__item__temperature__card__city{
+
+.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card__city{
   font-size: var(--font-size-12);
   line-height: 15px;
   letter-spacing: 0.01em;
@@ -1089,7 +1095,8 @@ color: var(--text-color-03);
   margin-bottom: 4px;
 }
 
-.carousel--varios .news-carousel__carousel__container__gallery__item__temperature__card__date{
+
+.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card__date{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -1102,7 +1109,8 @@ color: var(--text-color-03);
   margin-bottom: 37px;
 }
 
-.carousel--varios .news-carousel__carousel__container__gallery__item__temperature__card__status{
+
+.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card__status{
   font-size: var(--font-size-10);
   line-height: 12px;
   letter-spacing: -0.01em;
@@ -1111,10 +1119,121 @@ color: var(--text-color-03);
   opacity: 0.75;
 }
 
-.carousel--varios .news-carousel__carousel__container__gallery__item__temperature__card__measure{
+
+.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card__measure{
   font-size: var(--font-size-50);
   color: var(--text-color-01);
   line-height: 50px;
   letter-spacing: -0.05em;
   text-transform: uppercase;
+}
+
+.carousel--utility .news-carousel__carousel__container__gallery__item__lotomania__card{
+  width: 380px;
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
+  border-radius: 15px;
+  padding: 18px;
+}
+
+.carousel--utility .news-carousel__carousel__container__gallery__item__lotomania__card__title{
+  font-size: var(--font-size-12);
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: var(--text-color-01);
+  margin-bottom: 4px;
+}
+
+.carousel--utility .news-carousel__carousel__container__gallery__item__lotomania__card__info{
+  font-size: var(--font-size-10);
+  line-height: 12px;
+  letter-spacing: -0.01em;
+  color: var(--text-color-02);
+  opacity: 0.75;
+  margin-bottom: 16px;
+}
+
+.card-lotomania__carousel__container{
+  position: relative;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.card-lotomania__carousel__container__gallery-wrapper{
+  overflow-x: auto;
+}
+
+.card-lotomania__carousel__container__gallery{
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 20px;
+  width: 500px;
+  margin-bottom: 15px;
+}
+
+.card-lotomania__carousel__container__gallery__item{
+  display: flex;
+  flex-flow: column;  
+  height: 72px;
+}
+
+.card-lotomania__carousel__container__gallery__item__list-numbers{
+  display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 340px;
+    gap: 5px 5px;
+}
+
+.card-lotomania__carousel__container__gallery__item__list-numbers__item__circle{
+  background-color: var(--bg-color-07);  
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-lotomania__carousel__container__gallery__item__list-numbers__item__circle__number{
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--bg-color-04);
+}
+
+.card-lotomania__carousel__container__nav{
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-lotomania__carousel__container__nav__list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 25px;
+}
+
+.card-lotomania__carousel__container__nav__list__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-lotomania__carousel__container__nav__list__item__bullet{
+  border: 1px solid #C4C4C4;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-lotomania__carousel__container__nav__list__item__bullet.bullet--active{
+  border: 1px solid var(--bg-color-07);
+  background-color: var(--bg-color-07);
 }
