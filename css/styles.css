@@ -1041,8 +1041,13 @@ color: var(--text-color-03);
   letter-spacing: 0.01em;
 }
 
-.news-carousel.carousel-utility{
 
+.carousel.carousel-utility{
+  padding: 36px 10px 18px 10px;
+}
+
+.carousel-utility .carousel__container{
+  max-width: 750px;
 }
 
 .carousel-utility .news-carousel__carousel{
@@ -1050,50 +1055,41 @@ color: var(--text-color-03);
 }
 
 
-.carousel-utility .news-carousel__carousel__container{
+/*.carousel-utility .carousel__container{
   position: relative;
   max-width: 750px;
   margin: 0 auto;
   padding: 0;
-}
+}*/
 
 
-.carousel-utility .news-carousel__carousel__container__gallery-wrapper{
+.carousel-utility .carousel__container__gallery-wrapper{
   overflow-x: auto;
 }
 
 
-.carousel-utility .news-carousel__carousel__container__gallery{
+.carousel-utility .carousel__container__gallery{
   display: flex;
   flex-flow: row nowrap;
   column-gap: 12px;
 }
 
 
-.carousel-utility .news-carousel__carousel__container__gallery__item{
+.carousel-utility .carousel__container__gallery__item{
   display: flex;
   flex-flow: column;
   height: 176px;
 }
 
-.carousel-utility .news-carousel__carousel__container__gallery__item__card{
+.carousel-utility .carousel__container__gallery__item__card{
   background: #FFFFFF;
   border: 1px solid #F9F9F9;
   box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
   border-radius: 15px;
 }
 
-.carousel-utility .news-carousel__carousel__container__gallery__item__card.card-small{
-  width: 176px;
-  padding: 19px 18px 28px 18px;
-}
 
-.carousel-utility .news-carousel__carousel__container__gallery__item__card.card-big{
-  width: 380px;
-  padding: 18px;
-}
-
-.carousel-utility  .news-carousel__carousel__container__gallery__item__card__city{
+.carousel-utility  .carousel__container__gallery__item__card__city{
   font-size: var(--font-size-12);
   line-height: 15px;
   letter-spacing: 0.01em;
@@ -1101,7 +1097,7 @@ color: var(--text-color-03);
   margin-bottom: 4px;
 }
 
-.carousel-utility  .news-carousel__carousel__container__gallery__item__card__date{
+.carousel-utility  .carousel__container__gallery__item__card__date{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -1115,7 +1111,7 @@ color: var(--text-color-03);
 }
 
 
-.carousel-utility  .news-carousel__carousel__container__gallery__item__card__status{
+.carousel-utility  .carousel__container__gallery__item__card__status{
   font-size: var(--font-size-10);
   line-height: 12px;
   letter-spacing: -0.01em;
@@ -1125,7 +1121,7 @@ color: var(--text-color-03);
 }
 
 
-.carousel-utility .news-carousel__carousel__container__gallery__item__card__measure{
+.carousel-utility .carousel__container__gallery__item__card__measure{
   font-size: var(--font-size-50);
   color: var(--text-color-01);
   line-height: 50px;
@@ -1133,6 +1129,51 @@ color: var(--text-color-03);
   text-transform: uppercase;
 }
 
+.carousel-utility .card-city .carousel__container__gallery__item__card__infos{
+  margin-bottom: 4px;
+}
+
+.carousel-utility .card-city .carousel__container__gallery__item__card__infos.infos-city{
+  font-size: var(--font-size-12);
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: var(--bg-color-06);  
+}
+
+.carousel-utility .card-city .carousel__container__gallery__item__card__infos__city-name::before{
+  content: "-";
+  font-size: var(--font-size-12);
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: var(--bg-color-06);
+}
+
+
+.carousel-utility .card-city .carousel__container__gallery__item__card__infos.infos-today{
+  font-size: var(--font-size-10);
+  line-height: 12px;
+  letter-spacing: -0.01em;
+  color: var(--text-color-02);
+  opacity: 0.75;
+  margin-bottom: 36px;
+}
+
+.carousel-utility .card-city .carousel__container__gallery__item__card__infos__today-hour::before{
+  content: ", ";  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* LOTOMANIA*/
 .carousel-utility .card-lotomania .news-carousel__carousel__container__gallery__item__card__title{
   font-size: var(--font-size-12);
   line-height: 15px;
@@ -1176,15 +1217,16 @@ color: var(--text-color-03);
   border: 1px solid #F9F9F9;
   box-shadow: 0px 5px 7.5px rgb(0 0 0 / 5%);
   border-radius: 15px;
+  height: 176px;
+  padding: 18px;
 }
 
 .carousel__container__gallery__item__card.card-small{
-  width: 180px;
+  width: 176px;
 }
 
 .carousel__container__gallery__item__card.card-big {
   width: 380px;
-  padding: 18px;
 }
 
 .carousel__container__gallery__item__card.card-lotomania{
@@ -1202,7 +1244,7 @@ color: var(--text-color-03);
 .carousel__container__gallery__item__card__infos{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .card-lotomania .carousel__container__gallery__item__card__infos{
@@ -1210,9 +1252,7 @@ color: var(--text-color-03);
   margin-bottom: 16px;
 }
 
-.carousel__container__gallery__item__card__infos__contest-title,
-.carousel__container__gallery__item__card__infos__contest-number,
-.carousel__container__gallery__item__card__infos__contest-date{
+.carousel__container__gallery__item__card__infos.infos-contest{
   font-size: var(--font-size-10);
   line-height: 12px;
   letter-spacing: -0.01em;
@@ -1220,9 +1260,9 @@ color: var(--text-color-03);
   opacity: 0.75;
 }
 
-.card-lotomania .carousel__container__gallery__item__card__infos{
-  max-width: 125px;  
+.card-lotomania .carousel__container__gallery__item__card__infos.infos-contest{  
   margin-bottom: 16px;
+  column-gap: 3px;
 }
 
 .carousel__container__gallery__item__list-numbers{
@@ -1310,4 +1350,54 @@ color: var(--text-color-03);
 .carousel-lotomania-numbers .carousel__container__nav__list__item__bullet.bullet--active{
   border: 1px solid var(--bg-color-07);
   background-color: var(--bg-color-07);
+}
+
+
+/*CARD - HOROSCOPE*/
+.card-horoscope .carousel__container__gallery__item__card.card-small{
+  padding: 18px 0 22px 18px;
+}
+
+.card-horoscope .carousel__container__gallery__item__card__select{
+  border: none;
+  font-size: var(--font-size-12);
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  color: var(--bg-color-06);
+  margin-top: 50px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  position: relative;
+  left: -5px;
+}
+
+.card-horoscope .carousel__container__gallery__item__card__infos.infos-today{
+  font-size: var(--font-size-10);
+  line-height: 12px;
+  letter-spacing: -0.01em;
+  color: var(--text-color-02);
+  opacity: 0.75;
+  margin-bottom: 42px;
+  column-gap: 3px;
+}
+
+.card-horoscope .carousel__container__gallery__item__card__infos__today-date::before{
+  content: ",";
+}
+
+.card-horoscope .carousel__container__gallery__item__card__infos__today-month::before{
+  content: "de ";
+}
+
+.card-horoscope .carousel__container__gallery__item__card__link{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-horoscope .carousel__container__gallery__item__card__link>span{
+  font-size: var(--font-size-10);
+  color: var(--text-color-01);
+  line-height: 12px;
+  letter-spacing: -0.01em;
+  opacity: 0.75;
 }
