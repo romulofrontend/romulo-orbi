@@ -1041,16 +1041,16 @@ color: var(--text-color-03);
   letter-spacing: 0.01em;
 }
 
-.news-carousel.carousel--utility{
+.news-carousel.carousel-utility{
 
 }
 
-.carousel--utility .news-carousel__carousel{
+.carousel-utility .news-carousel__carousel{
   margin-top: 36px;
 }
 
 
-.carousel--utility .news-carousel__carousel__container{
+.carousel-utility .news-carousel__carousel__container{
   position: relative;
   max-width: 750px;
   margin: 0 auto;
@@ -1058,36 +1058,42 @@ color: var(--text-color-03);
 }
 
 
-.carousel--utility .news-carousel__carousel__container__gallery-wrapper{
+.carousel-utility .news-carousel__carousel__container__gallery-wrapper{
   overflow-x: auto;
 }
 
 
-.carousel--utility .news-carousel__carousel__container__gallery{
+.carousel-utility .news-carousel__carousel__container__gallery{
   display: flex;
   flex-flow: row nowrap;
   column-gap: 12px;
 }
 
 
-.carousel--utility .news-carousel__carousel__container__gallery__item{
+.carousel-utility .news-carousel__carousel__container__gallery__item{
   display: flex;
   flex-flow: column;
   height: 176px;
 }
 
-
-.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card{
-  width: 176px;
+.carousel-utility .news-carousel__carousel__container__gallery__item__card{
   background: #FFFFFF;
   border: 1px solid #F9F9F9;
   box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
   border-radius: 15px;
+}
+
+.carousel-utility .news-carousel__carousel__container__gallery__item__card.card-small{
+  width: 176px;
   padding: 19px 18px 28px 18px;
 }
 
+.carousel-utility .news-carousel__carousel__container__gallery__item__card.card-big{
+  width: 380px;
+  padding: 18px;
+}
 
-.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card__city{
+.carousel-utility  .news-carousel__carousel__container__gallery__item__card__city{
   font-size: var(--font-size-12);
   line-height: 15px;
   letter-spacing: 0.01em;
@@ -1095,8 +1101,7 @@ color: var(--text-color-03);
   margin-bottom: 4px;
 }
 
-
-.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card__date{
+.carousel-utility  .news-carousel__carousel__container__gallery__item__card__date{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -1110,7 +1115,7 @@ color: var(--text-color-03);
 }
 
 
-.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card__status{
+.carousel-utility  .news-carousel__carousel__container__gallery__item__card__status{
   font-size: var(--font-size-10);
   line-height: 12px;
   letter-spacing: -0.01em;
@@ -1120,7 +1125,7 @@ color: var(--text-color-03);
 }
 
 
-.carousel--utility .news-carousel__carousel__container__gallery__item__temperature__card__measure{
+.carousel-utility .news-carousel__carousel__container__gallery__item__card__measure{
   font-size: var(--font-size-50);
   color: var(--text-color-01);
   line-height: 50px;
@@ -1128,16 +1133,7 @@ color: var(--text-color-03);
   text-transform: uppercase;
 }
 
-.carousel--utility .news-carousel__carousel__container__gallery__item__lotomania__card{
-  width: 380px;
-  background: #FFFFFF;
-  border: 1px solid #F9F9F9;
-  box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
-  border-radius: 15px;
-  padding: 18px;
-}
-
-.carousel--utility .news-carousel__carousel__container__gallery__item__lotomania__card__title{
+.carousel-utility .card-lotomania .news-carousel__carousel__container__gallery__item__card__title{
   font-size: var(--font-size-12);
   line-height: 15px;
   letter-spacing: 0.01em;
@@ -1145,7 +1141,7 @@ color: var(--text-color-03);
   margin-bottom: 4px;
 }
 
-.carousel--utility .news-carousel__carousel__container__gallery__item__lotomania__card__info{
+.carousel-utility .card-lotomania .news-carousel__carousel__container__gallery__item__card__contest{
   font-size: var(--font-size-10);
   line-height: 12px;
   letter-spacing: -0.01em;
@@ -1154,86 +1150,164 @@ color: var(--text-color-03);
   margin-bottom: 16px;
 }
 
-.card-lotomania__carousel__container{
+.carousel__container{
   position: relative;
   max-width: 1020px;
   margin: 0 auto;
   padding: 0;
 }
 
-.card-lotomania__carousel__container__gallery-wrapper{
+.carousel__container__gallery-wrapper{
   overflow-x: auto;
 }
 
-.card-lotomania__carousel__container__gallery{
+.carousel__container__gallery{
   display: flex;
   flex-flow: row nowrap;
+}
+
+.carousel__container__gallery__item{
+  display: flex;
+  flex-flow: column;
+}
+
+.carousel__container__gallery__item__card{
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  box-shadow: 0px 5px 7.5px rgb(0 0 0 / 5%);
+  border-radius: 15px;
+}
+
+.carousel__container__gallery__item__card.card-small{
+  width: 180px;
+}
+
+.carousel__container__gallery__item__card.card-big {
+  width: 380px;
+  padding: 18px;
+}
+
+.carousel__container__gallery__item__card.card-lotomania{
+  height: 176px;
+}
+
+.carousel__container__gallery__item__card__title{
+  font-size: var(--font-size-12);
+  line-height: 15px;
+  letter-spacing: 0.01em;  
+  color: var(--bg-color-06);
+  margin-bottom: 4px;
+}
+
+.carousel__container__gallery__item__card__infos{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.card-lotomania .carousel__container__gallery__item__card__infos{
+  max-width: 125px;  
+  margin-bottom: 16px;
+}
+
+.carousel__container__gallery__item__card__infos__contest-title,
+.carousel__container__gallery__item__card__infos__contest-number,
+.carousel__container__gallery__item__card__infos__contest-date{
+  font-size: var(--font-size-10);
+  line-height: 12px;
+  letter-spacing: -0.01em;
+  color: var(--text-color-02);
+  opacity: 0.75;
+}
+
+.card-lotomania .carousel__container__gallery__item__card__infos{
+  max-width: 125px;  
+  margin-bottom: 16px;
+}
+
+.carousel__container__gallery__item__list-numbers{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.carousel__container__gallery__item__list-numbers__item__circle{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.carousel__container__nav{  
+  display: flex;
+  justify-content: flex-start;
+}
+
+.carousel__container__nav__list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel__container__nav__list__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__container__nav__list__item__bullet{  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel__container.carousel-lotomania-numbers{
+  max-width: 1020px;
+}
+
+.carousel-lotomania-numbers .carousel__container__gallery-wrapper{
+  overflow-x: auto;
+}
+
+.carousel-lotomania-numbers .carousel__container__gallery{
   column-gap: 20px;
   width: 500px;
   margin-bottom: 15px;
 }
 
-.card-lotomania__carousel__container__gallery__item{
-  display: flex;
-  flex-flow: column;  
+.carousel-lotomania-numbers .carousel__container__gallery__item{ 
   height: 72px;
 }
 
-.card-lotomania__carousel__container__gallery__item__list-numbers{
-  display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 340px;
-    gap: 5px 5px;
+.carousel-lotomania-numbers .carousel__container__gallery__item__list-numbers{
+  width: 340px;
+  gap: 5px 5px;
 }
 
-.card-lotomania__carousel__container__gallery__item__list-numbers__item__circle{
+.carousel-lotomania-numbers .carousel__container__gallery__item__list-numbers__item__circle{
   background-color: var(--bg-color-07);  
   width: 32px;
-  height: 32px;
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 32px;  
 }
 
-.card-lotomania__carousel__container__gallery__item__list-numbers__item__circle__number{
+.carousel-lotomania-numbers .carousel__container__gallery__item__list-numbers__item__circle__number{
   font-size: 14px;
   line-height: 17px;
   letter-spacing: -0.01em;
-  text-transform: uppercase;
   color: var(--bg-color-04);
 }
 
-.card-lotomania__carousel__container__nav{
-  width: 100px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.card-lotomania__carousel__container__nav__list{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+.carousel-lotomania-numbers .carousel__container__nav__list{
   width: 25px;
 }
 
-.card-lotomania__carousel__container__nav__list__item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-lotomania__carousel__container__nav__list__item__bullet{
+.carousel-lotomania-numbers .carousel__container__nav__list__item__bullet{
   border: 1px solid #C4C4C4;
   width: 6px;
   height: 6px;
-  border-radius: 50%;
-  cursor: pointer;
 }
 
-.card-lotomania__carousel__container__nav__list__item__bullet.bullet--active{
+.carousel-lotomania-numbers .carousel__container__nav__list__item__bullet.bullet--active{
   border: 1px solid var(--bg-color-07);
   background-color: var(--bg-color-07);
 }
