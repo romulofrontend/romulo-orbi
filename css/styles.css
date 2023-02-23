@@ -436,6 +436,62 @@ ol, ul, menu {
 
 
 
+/*NEWS-GROUP - Geral*/
+.news-group{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height: auto;  
+}
+
+.news-group__item__group-name__link{
+  display: flex;
+  justify-content: flex-start;  
+  cursor: pointer;
+}
+
+.news-group__item__news-title__link{
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+/*NEWS-GROUP - Geral - Fim*/
+
+
+
+/* NEWS-GROUP - Ora Bolas*/
+.news-group.group-ora-bolas{  
+  padding: 17px 24px;
+  gap: 18px;
+  border-bottom: 1px solid #CECECE;
+}
+
+.group-ora-bolas .news-group__item{
+  max-width: 312px;
+}
+
+.group-ora-bolas .news-group__item__group-name__link{
+  margin-bottom: 5px;
+  font-size: var(--font-size-10);
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.group-ora-bolas .news-group__item__group-name__link.link-ora-bolas{
+  color: var(--text-color-04);
+}
+
+.group-ora-bolas .news-group__item__news-title__link{
+  font-size: var(--font-size-14);
+  color: var(--text-color-01);
+  line-height: 16px;
+  letter-spacing: -0.01em;
+}
+/*NEWS-GROUP - Geral - Fim*/
+
+
+
 .carousel-orbitv .news-carousel__carousel__container__gallery__item__news-card{
   position: relative;
   width: 312px;
