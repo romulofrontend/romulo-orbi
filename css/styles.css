@@ -98,8 +98,7 @@ ol, ul, menu {
 }
 
 .carousel-header-bottom-navbar .carousel__container__gallery-wrapper{
-  padding-left: 24px;
-  
+  padding-left: 24px;  
 }
 
 .carousel-header-bottom-navbar .carousel__container__gallery{
@@ -175,6 +174,78 @@ ol, ul, menu {
 /* ADVERTISING - FIM*/
 
 
+/*CAROUSEL FAMOUS*/
+.carousel__container.carousel-famous-navbar{
+  max-width: 470px;
+  margin-bottom: 25px;
+
+}
+
+.carousel-famous-navbar .carousel__container__gallery-wrapper{
+  padding-left: 24px;
+
+}
+
+.carousel-famous-navbar .carousel__container__gallery{
+  justify-content: flex-start;
+  height: 76px;
+  column-gap: 12px;
+}
+
+.carousel-famous-navbar .carousel-famous__navbar__menu__item{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-famous-navbar .carousel-famous__navbar__menu__item:last-child>a{
+  margin-right: 24px;
+}
+
+.carousel-famous-navbar .carousel-famous__navbar__menu__item__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 5px;  
+}
+
+.carousel-famous-navbar .carousel-famous__navbar__menu__item__link__figure{
+  display: flex;
+  flex-flow: column nowrap;  
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-famous-navbar .carousel-famous__navbar__menu__item__link .carousel-famous__navbar__menu__item__link__figure__figure-image,
+.carousel-famous-navbar .carousel-famous__navbar__menu__item__link.link--active .carousel-famous__navbar__menu__item__link__figure__figure-image{  
+  border-radius: 50%;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+
+.carousel-famous-navbar .carousel-famous__navbar__menu__item__link .carousel-famous__navbar__menu__item__link__figure__figure-image{
+  border: 2px solid var(--bg-color-01);
+}
+
+.carousel-famous-navbar .carousel-famous__navbar__menu__item__link.link--active .carousel-famous__navbar__menu__item__link__figure__figure-image{
+  border: 2px solid var(--bg-color-03);
+  color: var(--text-color-01);
+  opacity: 1;
+}
+
+.carousel-famous-navbar .carousel-famous__navbar__menu__item__link .carousel-famous__navbar__menu__item__link__figure__figure-title{
+  font-size: var(--font-size-09);
+  color: var(--text-color-03);
+  line-height: 11px;
+  letter-spacing: -0.005em;
+}
+
+.carousel-famous-navbar .carousel-famous__navbar__menu__item__link.link--active .carousel-famous__navbar__menu__item__link__figure__figure-title{
+  color: var(--text-color-01);
+}
 
 
 
