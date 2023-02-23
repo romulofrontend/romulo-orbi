@@ -148,6 +148,31 @@ ol, ul, menu {
   line-height: var(--line-height-13);
   letter-spacing: -0.005em;
 }
+/*HEADER - Carousel Menu - Fim*/
+
+
+/* ADVERTISING */
+.advertising{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertising.advertising-retangle{
+  padding: 28px 0;
+}
+
+.advertising.advertising-square{
+  padding: 24px 0;
+}
+
+.advertising__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* ADVERTISING - FIM*/
 
 
 
