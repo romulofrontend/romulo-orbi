@@ -177,13 +177,11 @@ ol, ul, menu {
 /*CAROUSEL FAMOUS*/
 .carousel__container.carousel-famous-navbar{
   max-width: 470px;
-  margin-bottom: 25px;
-
+  margin-bottom: 24px;
 }
 
 .carousel-famous-navbar .carousel__container__gallery-wrapper{
   padding-left: 24px;
-
 }
 
 .carousel-famous-navbar .carousel__container__gallery{
