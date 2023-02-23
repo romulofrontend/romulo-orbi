@@ -62,8 +62,208 @@ ol, ul, menu {
   --font-size-30: 30px; 
   --font-size-31: 31px;
   --font-size-44: 44px;
-  --font-size-50: 50px;  
+  --font-size-50: 50px;
+  --line-height-12: 12px;
+  --line-height-13: 13px;  
 }
+
+/*CAROUSEL GERAL*/
+.carousel__container{  
+  margin: 0 auto;
+  padding: 0;
+}
+  
+.carousel__container__gallery-wrapper{
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel__container__gallery{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/*.carousel__container__gallery__item{
+  display: flex;
+  flex-flow: column;
+}*/
+/*CAROUSEL FIM*/
+
+/*HEADER*/
+
+
+/*HEADER - Carousel Menu*/
+.carousel__container.carousel-header-bottom-navbar{
+  max-width: 500px;
+}
+
+.carousel-header-bottom-navbar .carousel__container__gallery-wrapper{
+  padding-left: 24px;
+  
+}
+
+.carousel-header-bottom-navbar .carousel__container__gallery{
+  justify-content: flex-start;
+  column-gap: 27px;
+}
+
+.carousel-header-bottom-navbar .header__bottom__navbar__menu__item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;  
+}
+
+.carousel-header-bottom-navbar .header__bottom__navbar__menu__item__link{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  cursor: pointer;
+  color: var(--text-color-02);
+  opacity: 0.9;
+  height: 27px;
+  position: relative;  
+}
+
+.carousel-header-bottom-navbar .header__bottom__navbar__menu__item:last-child > .header__bottom__navbar__menu__item__link{
+  margin-right: 24px;
+}
+
+.carousel-header-bottom-navbar .header__bottom__navbar__menu__item__link.link--active{
+  color: var(--text-color-01);
+  opacity: 1;
+}
+
+.carousel-header-bottom-navbar .header__bottom__navbar__menu__item__link.link--active::after{  
+  content: "";
+  position: absolute;
+  background-color: var(--bg-color-03);
+  width: 75%;
+  height: 3px;
+  left: 0;
+  bottom: 0px;
+}
+
+.carousel-header-bottom-navbar .header__bottom__navbar__menu__item__link__text{
+  font-size: var(--font-size-11);
+  line-height: var(--line-height-13);
+  letter-spacing: -0.005em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel__container__gallery__item__card{
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  box-shadow: 0px 5px 7.5px rgb(0 0 0 / 5%);
+  border-radius: 15px;
+  height: 176px;
+  padding: 18px;
+}
+
+.carousel__container__gallery__item__card.card-small{
+  width: 176px;
+}
+
+.carousel__container__gallery__item__card.card-big {
+  width: 380px;
+}
+  
+.carousel__container__gallery__item__card.card-lotomania{
+  height: 176px;
+}
+
+.carousel__container__gallery__item__card__title{
+  font-size: var(--font-size-12);
+  line-height: 15px;
+  letter-spacing: 0.01em;  
+  color: var(--bg-color-06);
+  margin-bottom: 4px;
+}
+
+.carousel__container__gallery__item__card__infos{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.card-lotomania .carousel__container__gallery__item__card__infos{
+  max-width: 125px;  
+  margin-bottom: 16px;
+}
+
+.carousel__container__gallery__item__card__infos.infos-contest{
+  font-size: var(--font-size-10);
+  line-height: 12px;
+  letter-spacing: -0.01em;
+  color: var(--text-color-02);
+  opacity: 0.75;
+}
+
+.card-lotomania .carousel__container__gallery__item__card__infos.infos-contest{  
+  margin-bottom: 16px;
+  column-gap: 3px;
+}
+
+.carousel__container__gallery__item__list-numbers{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.carousel__container__gallery__item__list-numbers__item__circle{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.carousel__container__nav{  
+  display: flex;
+  justify-content: flex-start;
+}
+
+.carousel__container__nav__list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel__container__nav__list__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__container__nav__list__item__bullet{  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
 
 body{
   background: var(--bg-color-01 );
@@ -75,13 +275,18 @@ body{
 }
 
 .header__top{
-  display: flex;
-  align-items: center;
+  display: flex;   
   justify-content: space-between;
-  margin: 23px 24px 25px 24px;
+  align-items: flex-end;
+  margin: 23px 24px 25.5px 24px;
 }
 
-.header__logo__link{
+.header__top__logo{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__top__logo__link{
   background-image: url(../assets/svg/logo-ri.svg); 
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,33 +297,45 @@ body{
   height: 50px;
 }
 
-.header__link{
-  display: inline-block;  
-  background: var(--bg-color-04);
-  color: var(--text-color-01);
+.header__top__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 150px;
+}
+
+.header__top__box__link{ 
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: var(--bg-color-04);  
   border: none;
   border-radius: 23px;
   box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
-  cursor:pointer;  
-  width: 106px;
-  height: 38px;
-  position: relative;  
+  cursor: pointer;  
 }
 
-.header__link.link--newsletter{
+.header__top__box__link.link-jornal{
+  width: 106px;
+  height: 38px;
+}
+
+.header__top__box__link.link-newsletter{
   display: none;
 }
 
-.header__link__text{
-  position: absolute;
-  bottom: 12.25px;
-  right: 24px;
+.header__top__box__link__text{
   font-size: var(--font-size-11);
-  line-height: 13px;
-  font-weight: 800;
+  color: var(--text-color-01);
+  line-height: 13.31px;
+  letter-spacing: -0.005em;
+  padding: 0 24px 12.25px 0;
+  position: relative;
+  top: 2px
 }
 
-.header__menuaside{
+.header__top__box__menuaside{
   background-image: url(../assets/svg/menu-aside-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,17 +345,21 @@ body{
   height: 15px;
 }
 
+
+/*
+
 .header__bottom{
-  margin: 0 0 18px 24px;
+  margin: 0 0 0 24px;
 }
 
-
-.header-navbar {
+.header__bottom__navbar {
   margin: 0 auto;
   max-width: 800px;
 }
+*/
 
-.header-navbar__menu {  
+/*
+.header__bottom__navbar__menu {  
   height: 27px;
   list-style: none;
   display: flex;
@@ -147,8 +368,18 @@ body{
   column-gap: 29px;
   padding-right: 24px;
 }
+*/
 
-.header-navbar__menu__item__link {
+.carousel__container.carousel-header-bottom-navbar{
+
+}
+
+  .carousel-header-bottom-navbar .carousel__container__gallery
+
+
+
+/*
+.header__bottom__navbar__menu__item__link{
   display: block;
   position: relative;  
   color: var(--text-color-02);
@@ -171,22 +402,33 @@ body{
   left: 0;
   bottom: -14px;
 }
+*/
 
+
+/* ADVRETISING */
 .advertising{
-  margin-bottom: 10px;
-}
-
-.advertising_banner{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.advertising_banner_link_image{
-  display: block;
-  height: 48px;
+.advertising.advertising-retangle{
+  padding: 24px 0;
+}
+
+.advertising.advertising-square{
+  padding: 24px 0;
+}
+
+.advertising__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
+
+
+
 
 .navbar-celebrity{
   margin-bottom: 25px;
@@ -1044,6 +1286,7 @@ color: var(--text-color-03);
 
 .carousel.carousel-utility{
   padding: 36px 10px 18px 10px;
+  margin-bottom: 24px;
 }
 
 .carousel-utility .carousel__container{
@@ -1054,26 +1297,15 @@ color: var(--text-color-03);
   margin-top: 36px;
 }
 
-
-/*.carousel-utility .carousel__container{
-  position: relative;
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 0;
-}*/
-
-
 .carousel-utility .carousel__container__gallery-wrapper{
   overflow-x: auto;
 }
-
 
 .carousel-utility .carousel__container__gallery{
   display: flex;
   flex-flow: row nowrap;
   column-gap: 12px;
 }
-
 
 .carousel-utility .carousel__container__gallery__item{
   display: flex;
@@ -1087,7 +1319,6 @@ color: var(--text-color-03);
   box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
   border-radius: 15px;
 }
-
 
 .carousel-utility  .carousel__container__gallery__item__card__city{
   font-size: var(--font-size-12);
@@ -1110,7 +1341,6 @@ color: var(--text-color-03);
   margin-bottom: 37px;
 }
 
-
 .carousel-utility  .carousel__container__gallery__item__card__status{
   font-size: var(--font-size-10);
   line-height: 12px;
@@ -1119,7 +1349,6 @@ color: var(--text-color-03);
   color: var(--text-color-10);
   opacity: 0.75;
 }
-
 
 .carousel-utility .carousel__container__gallery__item__card__measure{
   font-size: var(--font-size-50);
@@ -1148,7 +1377,6 @@ color: var(--text-color-03);
   color: var(--bg-color-06);
 }
 
-
 .carousel-utility .card-city .carousel__container__gallery__item__card__infos.infos-today{
   font-size: var(--font-size-10);
   line-height: 12px;
@@ -1161,16 +1389,6 @@ color: var(--text-color-03);
 .carousel-utility .card-city .carousel__container__gallery__item__card__infos__today-hour::before{
   content: ", ";  
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* LOTOMANIA*/
@@ -1191,115 +1409,6 @@ color: var(--text-color-03);
   margin-bottom: 16px;
 }
 
-.carousel__container{
-  position: relative;
-  max-width: 1020px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.carousel__container__gallery-wrapper{
-  overflow-x: auto;
-}
-
-.carousel__container__gallery{
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-.carousel__container__gallery__item{
-  display: flex;
-  flex-flow: column;
-}
-
-.carousel__container__gallery__item__card{
-  background: #FFFFFF;
-  border: 1px solid #F9F9F9;
-  box-shadow: 0px 5px 7.5px rgb(0 0 0 / 5%);
-  border-radius: 15px;
-  height: 176px;
-  padding: 18px;
-}
-
-.carousel__container__gallery__item__card.card-small{
-  width: 176px;
-}
-
-.carousel__container__gallery__item__card.card-big {
-  width: 380px;
-}
-
-.carousel__container__gallery__item__card.card-lotomania{
-  height: 176px;
-}
-
-.carousel__container__gallery__item__card__title{
-  font-size: var(--font-size-12);
-  line-height: 15px;
-  letter-spacing: 0.01em;  
-  color: var(--bg-color-06);
-  margin-bottom: 4px;
-}
-
-.carousel__container__gallery__item__card__infos{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-}
-
-.card-lotomania .carousel__container__gallery__item__card__infos{
-  max-width: 125px;  
-  margin-bottom: 16px;
-}
-
-.carousel__container__gallery__item__card__infos.infos-contest{
-  font-size: var(--font-size-10);
-  line-height: 12px;
-  letter-spacing: -0.01em;
-  color: var(--text-color-02);
-  opacity: 0.75;
-}
-
-.card-lotomania .carousel__container__gallery__item__card__infos.infos-contest{  
-  margin-bottom: 16px;
-  column-gap: 3px;
-}
-
-.carousel__container__gallery__item__list-numbers{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.carousel__container__gallery__item__list-numbers__item__circle{  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.carousel__container__nav{  
-  display: flex;
-  justify-content: flex-start;
-}
-
-.carousel__container__nav__list{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.carousel__container__nav__list__item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel__container__nav__list__item__bullet{  
-  border-radius: 50%;
-  cursor: pointer;
-}
 
 .carousel__container.carousel-lotomania-numbers{
   max-width: 1020px;
