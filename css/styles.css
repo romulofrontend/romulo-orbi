@@ -923,6 +923,10 @@ ol, ul, menu {
   margin-bottom: 0;
 }
 
+.news__container.news-series.new-series-2{
+  margin-bottom: 20px;
+}
+
 .news-series .carousel__container__gallery{
   justify-content:space-between;
   margin-bottom: 15px;
@@ -1075,7 +1079,6 @@ ol, ul, menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 16px;
   column-gap: 18px;
 }
 
