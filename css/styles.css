@@ -1485,7 +1485,7 @@ ol, ul, menu {
 
 /*CAROUSEL UTILITY*/
 .carousel__container.carousel-utility{
-  padding: 36px 0 18px 0;
+  padding: 36px 18px 18px 18px;
 }
 
 .carousel-utility .carousel__container__gallery__item__card{
@@ -1531,10 +1531,6 @@ ol, ul, menu {
 /*CAROUSEL UTILITY FIM*/
 
 /*CAROUSEL UTILITY CARD CITY*/
-.carousel-utility .card-city{
-  margin-left: 24px;
-}
-
 .carousel-utility .card-city .carousel__container__gallery__item__card__infos{
   margin-bottom: 37px;
 }
@@ -1564,15 +1560,30 @@ ol, ul, menu {
 /*CAROUSEL UTILITY CARD CITY - FIM*/
 
 
-/*CAROUSEL UTILITY CARD LOTOMANIA*/
-.carousel-utility .card-lotomania .carousel__container__gallery__item__card__infos{
-  margin-bottom: 16px;
+/*CAROUSEL UTILITY CARD HOROSCOPE*/
+.card-horoscope .carousel__container__gallery__item__card__select{
+  font-size: var(--font-size-11);
+  color: var(--text-color-01);
+  line-height: 13px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 8px;
+  position: relative;
+  left: -4px
 }
 
+.card-horoscope .carousel__container__gallery__item__card__infos{
+  margin-bottom: 42px;
+}
 
-
-/*CAROUSEL UTILITY CARD LOTOMANIA - FIM*/
-
+.card-horoscope .carousel__container__gallery__item__card__link{
+  font-size: var(--font-size-10);
+  color: var(--text-color-01);
+  line-height: 12px;
+  letter-spacing: -0.01em;
+  opacity: 0.75
+}
 
 
 
