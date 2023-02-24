@@ -246,7 +246,7 @@ ol, ul, menu {
   align-items: center;
 }
 
-.advertising.advertising-retangle{
+.advertising.advertising-rectangle{
   padding: 24px 28px;
 }
 
@@ -1219,7 +1219,7 @@ ol, ul, menu {
 
 /*NEWS GROUP - Group Colunas */
 .news-group.group-colunas{
-  padding: 24px;
+  padding: 0 24px;
 }
 
 .news-group.group-colunas .news-group__section{
