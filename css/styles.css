@@ -1232,7 +1232,8 @@ ol, ul, menu {
 }
 
 .news-group.group-colunas .news-group__section{
-  margin-bottom: 4px;
+  row-gap: 16px;
+  margin-bottom: 24px
 }
 
 .news-group.group-colunas .news-group__item{
