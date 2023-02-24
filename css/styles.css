@@ -1483,10 +1483,110 @@ ol, ul, menu {
 
 
 
+/*CAROUSEL UTILITY*/
+.carousel__container.carousel-utility{
+  padding: 36px 0 18px 0;
+}
+
+.carousel-utility .carousel__container__gallery__item__card{
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
+  border-radius: 15px;
+  padding: 19px 0 0 18px;
+  height: 176px
+}
+
+.carousel-utility .carousel__container__gallery__item__card.card-small{
+  width: 176px
+}
+
+.carousel-utility .carousel__container__gallery__item__card.card-big{
+  width: 373px
+}
+
+.carousel-utility .carousel__container__gallery__item__card__title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 2px;
+  font-size: var(--font-size-12);
+  color: var(--text-color-01);
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;  
+}
+
+.carousel-utility .carousel__container__gallery__item__card__infos{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 2px;
+  font-size: var(--font-size-10);
+  color: var(--text-color-02);
+  line-height: 12px;
+  letter-spacing: -0.01em;  
+  opacity: 0.75;
+}
+/*CAROUSEL UTILITY FIM*/
+
+/*CAROUSEL UTILITY CARD CITY*/
+.carousel-utility .card-city{
+  margin-left: 24px;
+}
+
+.carousel-utility .card-city .carousel__container__gallery__item__card__infos{
+  margin-bottom: 37px;
+}
+
+.carousel-utility .card-city .carousel__container__gallery__item__card__temperature{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.carousel-utility .card-city .carousel__container__gallery__item__card__temperature__status{
+  font-size: var(--font-size-10);
+  color: var(--text-color-10);
+  line-height: 12px;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  opacity: 0.75;
+}
+
+.carousel-utility .card-city .carousel__container__gallery__item__card__temperature__degrees{
+  font-size: var(--font-size-50);
+  color: var(--text-color-01);
+  line-height: 50px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+/*CAROUSEL UTILITY CARD CITY - FIM*/
+
+
+/*CAROUSEL UTILITY CARD LOTOMANIA*/
+.carousel-utility .card-lotomania .carousel__container__gallery__item__card__infos{
+  margin-bottom: 16px;
+}
+
+
+
+/*CAROUSEL UTILITY CARD LOTOMANIA - FIM*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*CAROUSEL UTILITY*/
-.carousel__container.carousel-utility{
+/*.carousel__container.carousel-utility{
   padding: 36px 10px 18px 10px;
   margin-bottom: 24px;
 }
@@ -1600,10 +1700,11 @@ ol, ul, menu {
 .carousel-utility .card-city .carousel__container__gallery__item__card__infos__today-hour::before{
   content: ", ";  
 }
+*/
 
 
 /* LOTOMANIA*/
-.carousel-utility .card-lotomania .news-carousel__carousel__container__gallery__item__card__title{
+/*.carousel-utility .card-lotomania .news-carousel__carousel__container__gallery__item__card__title{
   font-size: var(--font-size-12);
   line-height: 15px;
   letter-spacing: 0.01em;
@@ -1671,10 +1772,11 @@ ol, ul, menu {
   border: 1px solid var(--bg-color-07);
   background-color: var(--bg-color-07);
 }
+*/
 
 
 /*CARD - HOROSCOPE*/
-.card-horoscope .carousel__container__gallery__item__card.card-small{
+/*.card-horoscope .carousel__container__gallery__item__card.card-small{
   padding: 18px 0 22px 18px;
 }
 
@@ -1720,4 +1822,10 @@ ol, ul, menu {
   line-height: 12px;
   letter-spacing: -0.01em;
   opacity: 0.75;
+}
+*/
+
+.carousel-utility .carousel__container__gallery{
+  justify-content: flex-start;
+  column-gap: 12px;
 }
