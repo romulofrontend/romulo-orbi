@@ -520,7 +520,6 @@ ol, ul, menu {
   margin-bottom: 14px;
 }
 
-
 .carousel-orbi-tv.carousel-full__carousel{
   margin-bottom: 14px;
 }
@@ -535,6 +534,7 @@ ol, ul, menu {
 
 .carousel-orbi-tv .carousel__container__gallery__item__article__news-title{
   margin-bottom: 34px;
+  padding-left: 5px;
 }
 
 .carousel-orbi-tv .carousel__container__gallery__item__article__news-title__link{  
