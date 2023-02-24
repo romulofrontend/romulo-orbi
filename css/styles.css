@@ -548,7 +548,7 @@ ol, ul, menu {
 
 .carousel-orbi-tv .carousel-full__social-media{
   padding: 0 10px;
-  margin-bottom: 16px;;
+  margin-bottom: 16px;
 }
 
 .carousel-orbi-tv .carousel-full__social-media__link{
@@ -561,7 +561,6 @@ ol, ul, menu {
   line-height: 15px;
   letter-spacing: 0.01em;
 }
-
 /*CAROUSEL ORBITV - FIM*/
 
 
@@ -1303,315 +1302,6 @@ ol, ul, menu {
 }
 /*NEWS - News-Main - Fim*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.main-news{
-  background-color: var(--bg-color-01);
-  color: var(--text-color-05);
-  position: relative;
-  width: 100%;
-  height: 360px;
-}
-
-.main-news:before{
-    content: "";
-    position: absolute;
-    background: url(../assets/img/banner-desktop-principal-selecao-brasileira-mobile.jpg) no-repeat center center/cover;
-    width: 100%;
-    height: 100%;
-}
-
-.main-news__article{
-  position: relative;   
-  height: 360px; 
-}
-
-.main-news__article__tags{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 15px 24px 0px 24px;
-}
-
-.main-news__article__tags__link{
-  font-family: var(--font-family-01);
-  display: flex;
-  justify-content: center;  
-  align-items: center;  
-  height: 18px;
-  border-radius: 20px;  
-  width: 100%; 
-}
-
-.main-news__article__tags__link.link--category{
-  background: var(--bg-color-06);
-  color: var(--text-color-05);
-  text-transform: uppercase;
-  max-width: 66px;  
-}
-.main-news__article__tags__link.link--share{
-  background: var(--bg-color-03);
-  color: var(--text-color-01);
-  max-width: 85px;  
-}
-
-.main-news__article__tags__link__text{
-  font-weight: 800;
-  font-size: 8px;
-  line-height: 10px;
-  letter-spacing: 0.01em;
-}
-
-.main-news__article__tags__link.link--share::before{
-  content: url(../assets/svg/icon-feather-send.svg);
-  width: 10px;
-  height: 10px;
-  position: relative;
-  top: -6px;
-  left: -4px;
-}
-
-.main-news__article__box{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 164px;
-  background: linear-gradient(90deg, rgba(35, 31, 32, 0) 0%, rgba(35, 31, 32, .3) 55.64%);
-  padding: 61px 24px 29px 24px;
-}
-
-.main-news__article__box__tag{
-  display: list-item;          
-  list-style-type: disc;
-  list-style-position: inside;
-  color: var(--text-color-04);
-}
-
-.main-news__article__box__tag__link{
-  cursor: pointer;
-  color: var(--bg-color-04);
-  margin-bottom: 5px;
-  position: relative;
-  left: -10px;  
-}
-
-.main-news__article__box__tag__link__text{
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 12px;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.160784);  
-}
-
-.main-news__article__box__tag__link__text:before{ 
-  width: 6px;
-  height: 6px;
-  background: var(--bg-color-03);
-  display: block;   
-}
-
-.main-news__article__box__title__link{
-  display: block;
-  cursor: pointer;
-  color: var(--text-color-05);
-}
-
-.main-news__article__box__title__link__text{  
-  font-size: var(--font-size-24);
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: -0.01em;
-  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.160784);
-}
-
-
-.carousel__container__gallery__item__card{
-  background: #FFFFFF;
-  border: 1px solid #F9F9F9;
-  box-shadow: 0px 5px 7.5px rgb(0 0 0 / 5%);
-  border-radius: 15px;
-  height: 176px;
-  padding: 18px;
-}
-
-.carousel__container__gallery__item__card.card-small{
-  width: 176px;
-}
-
-.carousel__container__gallery__item__card.card-big {
-  width: 380px;
-}
-  
-.carousel__container__gallery__item__card.card-lotomania{
-  height: 176px;
-}
-
-.carousel__container__gallery__item__card__title{
-  font-size: var(--font-size-12);
-  line-height: 15px;
-  letter-spacing: 0.01em;  
-  color: var(--bg-color-06);
-  margin-bottom: 4px;
-}
-
-.carousel__container__gallery__item__card__infos{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-}
-
-.card-lotomania .carousel__container__gallery__item__card__infos{
-  max-width: 125px;  
-  margin-bottom: 16px;
-}
-
-.carousel__container__gallery__item__card__infos.infos-contest{
-  font-size: var(--font-size-10);
-  line-height: 12px;
-  letter-spacing: -0.01em;
-  color: var(--text-color-02);
-  opacity: 0.75;
-}
-
-.card-lotomania .carousel__container__gallery__item__card__infos.infos-contest{  
-  margin-bottom: 16px;
-  column-gap: 3px;
-}
-
-.carousel__container__gallery__item__list-numbers{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.carousel__container__gallery__item__list-numbers__item__circle{  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.carousel__container__nav{  
-  display: flex;
-  justify-content: flex-start;
-}
-
-.carousel__container__nav__list{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.carousel__container__nav__list__item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel__container__nav__list__item__bullet{  
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-
-
-body{
-  background: var(--bg-color-01 );
-}
-
-
-
-
-
-
-
-.news-group{
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  height: auto;
-  padding: 17px 24px;
-  gap: 18px;
-  border-bottom: 1px solid #CECECE;
-}
-
-.news-group__item{
-  max-width: 312px;
-}
-
-.news-group__item__group-name__link{
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 5px;
-  font-size: var(--font-size-10);
-  line-height: 12px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.news-group__item__group-name__link.link-ora-bolas{
-  color: var(--text-color-04);
-}
-
-.news-group__item__news-title__link{
-  display: flex;
-  justify-content: flex-start;
-  font-size: var(--font-size-14);
-  color: var(--text-color-01);
-  line-height: 16px;
-  letter-spacing: -0.01em;
-  cursor: pointer;
-}
-
-
 /*NEWS-CAROUSEL*/
 .news-carousel__container{
   margin-bottom: 24px;
@@ -1795,8 +1485,8 @@ body{
 
 
 
-
-.carousel.carousel-utility{
+/*CAROUSEL UTILITY*/
+.carousel__container.carousel-utility{
   padding: 36px 10px 18px 10px;
   margin-bottom: 24px;
 }
@@ -1830,6 +1520,7 @@ body{
   border: 1px solid #F9F9F9;
   box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
   border-radius: 15px;
+  padding: 19px 0 0 18px;
 }
 
 .carousel-utility .carousel__container__gallery__item__card.card-small{
