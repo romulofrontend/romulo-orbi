@@ -442,7 +442,7 @@ ol, ul, menu {
 
 
 /*CAROUSEL FULL ORBITV - INICIO*/
-.carousel.carousel-full.carousel-orbi-tv{
+.carousel__container.carousel-orbi-tv{
   background-color: var(--bg-color-02);
   padding: 36px 0 16px 0;
 }
@@ -1830,6 +1830,14 @@ body{
   border: 1px solid #F9F9F9;
   box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.0509804);
   border-radius: 15px;
+}
+
+.carousel-utility .carousel__container__gallery__item__card.card-small{
+  width: 176px;
+}
+
+.carousel-utility .carousel__container__gallery__item__card.card-big{
+  width: 373px;
 }
 
 .carousel-utility  .carousel__container__gallery__item__card__city{
