@@ -3,60 +3,13 @@
 *:before {
     margin: 0;
     padding: 0;
+    border: none;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-  font-size: 100%;
-  list-style-type: none;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, 
-blockquote:after,
-q:before, 
-q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-a{
-  text-decoration: none;;
+html{
+  font-size: 62.5%;
 }
 
 :root{  
@@ -131,9 +84,15 @@ a{
   width: 100%
 }
 
+
+
 body{
   font-family: var(--font-family-01);
   font-weight: var(--font-weight-01);
+}
+
+p{
+  font-size: 5rem;
 }
 
 /*CAROUSEL GERAL*/
@@ -639,8 +598,16 @@ body{
 }
 
 .news__container__item__image{
+  display: block;
   width: 100%;
   height: auto;
+}
+
+
+.news .teste-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .news__container__item__link{
@@ -650,6 +617,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
+  display: block;
   cursor: pointer;
 }
 
@@ -673,7 +641,7 @@ body{
 .news__container__item__tags__link.link--esportes,
 .news__container__item__tags__link.link--share{
   color: var(--color-05);
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 .news__container__item__tags__link.link--category,
@@ -683,25 +651,25 @@ body{
 }
 
 .news__container__item__tags__link.link--category{
-  width: 66px;
+  width: 6.6rem;
 }
 
 .news__container__item__tags__link.link--esportes{
   border: .7px solid var(--color-04);
-  width: 60px;
+  width: 6rem;
 }
 
 .news__container__item__tags__link.link--share{
   background: var(--color-03);
-  width: 85px;
+  width: 8.5rem;
 }
 
 .news__container__item__tags__link.link--share::before{
   position: relative;
-  top: -4px;
-  left: -4px;
-  width: 10px;
-  height: 10px;
+  top: 0;
+  left: -4.4rem;
+  width: 1rem;
+  height: 1rem;
   content: url(../assets/svg/icon-feather-send.svg);
 }
 
